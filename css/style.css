@@ -3,6 +3,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  font-size: 15px;
+}
+
+a {
+  color: tomato;
 }
 
 #wrapper {
@@ -11,7 +16,7 @@ body {
 }
 
 #me {
-  width: 180px;
+  width: 100px;
   margin: 0 auto;
 }
 
@@ -21,33 +26,39 @@ body {
   height: auto;
 }
 
+header {
+  width: 60%;
+  margin: 30px auto 0;
+  background-color: tomato;
+  padding: 10px 10px 10px;
+}
+
 header h1 {
   font-family: "Montserrat", Helvetica, Arial;
   padding: 0;
   margin: 0;
   color: white;
   width: 100%;
-  font-size: 2.7em;
+  font-size: 1.8em;
   
 }
 
-header {
-  width: 90%;
+#about {
+  font-size: 1.3em;
   margin: 20px auto 0;
-  background-color: tomato;
-  padding: 10px 10px 10px;
-}
-
-#main {
-  font-size: 1.7em;
-  margin: 20px auto 0;
-  width: 90%;
+  width: 80%;
   text-align: center;
 }
 
-#main p {
-  padding: 0;
-  margin: 0;
+#separator {
+  width: 60%;
+  margin: 30px auto 30px;
+}
+
+#statement {
+  text-align: left;
+  width: 83%;
+  margin: 0 auto 0;
 }
 
 @media (max-width: 740px) {
