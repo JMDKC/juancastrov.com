@@ -1,0 +1,55 @@
+body {
+  font-family: "Arvo", Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#wrapper {
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+#me {
+  width: 180px;
+  margin: 0 auto;
+}
+
+#me img {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  font-family: "Montserrat", Helvetica, Arial;
+  padding: 0;
+  margin: 0;
+  color: white;
+  width: 100%;
+  font-size: 2.7em;
+  
+}
+
+header {
+  width: 90%;
+  margin: 20px auto 0;
+  background-color: tomato;
+  padding: 10px 10px 10px;
+}
+
+#main {
+  font-size: 1.7em;
+  margin: 20px auto 0;
+  width: 90%;
+  text-align: center;
+}
+
+#main p {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 740px) {
+
+}
