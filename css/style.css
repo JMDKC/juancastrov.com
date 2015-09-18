@@ -187,6 +187,10 @@ footer {
   color: #666;
 }
 
+#foot-copy {
+  margin-top: 5px;
+}
+
 
 /* ---------------------------------
   MEDIA QUERIES
