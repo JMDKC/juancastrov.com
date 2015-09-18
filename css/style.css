@@ -1,5 +1,9 @@
+
+/* ---------------------------------
+  GENERAL & RESETTING
+--------------------------------- */
 body {
-  font-family: "Arvo", Helvetica, Arial;
+  font-family: "Arvo", Courier, monospace, Arial;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -12,7 +16,17 @@ hr {
 }
 
 a {
-  color: tomato;
+  color: #ff6346;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li, li img {
+  width: 100%;
 }
 
 #wrapper {
@@ -20,46 +34,60 @@ a {
   margin: 30px auto;
 }
 
-#me {
+#separator {
+  width: 60%;
+  margin: 30px auto 30px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------------
+  HEADER AND PRESENTATION TEXT
+--------------------------------- */
+#headerImg {
   width: 100px;
   margin: 0 auto;
 }
 
-#me img {
+#headerImg img {
   border-radius: 100%;
   width: 100%;
   height: auto;
 }
 
-header {
+#title {
   width: 60%;
   margin: 30px auto 0;
-  background-color: tomato;
+  background-color: #ff6346;
   padding: 10px 10px 10px;
 }
 
-header h1 {
+#title h1 {
   font-family: "Montserrat", Helvetica, Arial;
   padding: 0;
   margin: 0;
-  color: white;
+  color: #fff;
   width: 100%;
   font-size: 1.8em;
-  
 }
 
-#about {
+#presentation {
   font-size: 1.3em;
   margin: 20px auto 0;
   width: 80%;
   text-align: center;
 }
 
-#about u {
+#presentation u {
   font-style: italic;
   letter-spacing: 0.2px;
-  background-color: tomato;
-  color: white;
+  background-color: #ff6346;
+  color: #fff;
   text-decoration: none;
   padding: 1px 3px 1px;
   display: block;
@@ -67,15 +95,60 @@ header h1 {
   width: 210px;
 }
 
-#separator {
-  width: 60%;
-  margin: 30px auto 30px;
-}
 
-#statement {
+/* ---------------------------------
+  BODY AND FOOTER
+--------------------------------- */
+section {
   text-align: left;
   width: 83%;
   margin: 0 auto 0;
+  clear: both;
+}
+
+#section-about p {
+  padding-left: 5px;
+}
+
+#section-projects {
+  width: 90%;
+}
+
+#section-projects li {
+  padding: 5%;
+  margin-bottom: 30px;
+  background-color: #EFEFEF;
+  border-radius: 2px;
+}
+
+section h1 {
+  font-family: "Montserrat", Helvetica, Arial;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ff6346;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  margin: 10px 0 10px;
+}
+
+section #pTitle {
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: black;
+  margin: 15px 0 5px;
+}
+
+section #ghLink {
+  font-style: italic;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 footer {
@@ -85,6 +158,54 @@ footer {
   color: #666;
 }
 
-@media (max-width: 740px) {
 
+/* ---------------------------------
+  MEDIA QUERIES
+--------------------------------- */
+@media (min-width: 740px) {
+  
+  /* HEADER AND PRESENTATION TEXT 
+  --------------------------------- */
+  header {
+    width: 650px;
+    margin-right: auto; margin-left: auto;
+  }
+
+  #separator {
+    clear: both;
+  }
+
+  #title {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  #presentation u {
+    display: inline-block;
+    text-align: left;
+    padding: 0px 4px 0px;
+    width: auto;
+  }
+
+  #headerImg {
+    float: left;
+    width: 25%;
+  }
+
+  #headerImg img {
+    height: 100%;
+    width: auto;
+    margin-right: 5%;
+    max-height: 150px;
+  }
+
+  #headerBody {
+    width: 70%;
+    float: right;
+  }
+
+  #presentation {
+    max-width: 450px;
+    margin: 0 auto 0;
+  }
 }
