@@ -122,7 +122,7 @@ section {
   border-radius: 2px;
 }
 
-section h1 {
+section h2 {
   font-family: "Montserrat", Helvetica, Arial;
   font-weight: 400;
   text-transform: uppercase;
@@ -281,7 +281,7 @@ footer {
     margin-bottom: 0;
   }
 
-  section h1 {
+  section h2 {
     font-size: 1.6em;
     margin-top: 0;
     margin-bottom: 30px;
