@@ -37,6 +37,7 @@ li, li img {
 #separator {
   width: 60%;
   margin: 30px auto 30px;
+  clear: both;
 }
 
 * {
@@ -187,7 +188,7 @@ footer {
   font-weight: 400;
   font-size: 0.8em;
   color: #666;
-  line-height: 140%;
+  line-height: 1.4em;
 }
 
 #foot-text {
@@ -204,48 +205,96 @@ footer {
 --------------------------------- */
 @media (min-width: 740px) {
   
+  #mobile {
+    display: none;
+  }
+
   /* HEADER AND PRESENTATION TEXT 
   --------------------------------- */
+
+  #wrapper {
+    max-width: 100%;
+    margin: 0;
+  }
+
   header {
-    width: 650px;
-    margin-right: auto; margin-left: auto;
+    margin: 70px auto 20px auto;
+    width: 520px;
+  }
+
+  section {
+    width: 500px;
+    overflow: auto;
+  }
+
+  #section-projects {
+    width: 90%;
+    
   }
 
   #separator {
     clear: both;
+    width: 250px;
+    margin: 40px auto 40px;
   }
 
   #title {
     margin-top: 0;
-    width: 100%;
+    width: 330px;
+  }
+
+  #headerBody {
+    padding-top: 5px;
+    width: 70%;
+    margin-left: 160px;
   }
 
   #presentation u {
-    display: inline-block;
-    text-align: left;
     padding: 0px 4px 0px;
-    width: auto;
+    width: 225px;
   }
 
   #headerImg {
     float: left;
-    width: 25%;
+    width: 30%;
   }
 
   #headerImg img {
-    height: 100%;
-    width: auto;
-    margin-right: 5%;
-    max-height: 150px;
-  }
-
-  #headerBody {
-    width: 70%;
-    float: right;
+    width: 100%;
+    height: auto;
   }
 
   #presentation {
     max-width: 450px;
     margin: 0 auto 0;
+    font-size: 1.4em;
+    overflow: auto;
+  }
+
+  #presentation p {
+    margin: 15px auto 0;
+  }
+
+  #section-projects li {
+    padding: 16px;
+    width: 30%;
+    float: left;
+    margin-right: 1.66667%;
+    margin-left: 1.66667%;
+    margin-bottom: 0;
+  }
+
+  section h1 {
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  #section-social ul {
+    margin-left: 40px;
+  }
+
+  footer {
+    margin-bottom: 30px;
   }
 }
