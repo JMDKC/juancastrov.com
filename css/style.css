@@ -188,7 +188,7 @@ footer {
   font-weight: 400;
   font-size: 0.8em;
   color: #666;
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 #foot-text {
@@ -208,9 +208,6 @@ footer {
   #mobile {
     display: none;
   }
-
-  /* HEADER AND PRESENTATION TEXT 
-  --------------------------------- */
 
   #wrapper {
     max-width: 100%;
