@@ -185,10 +185,11 @@ footer {
   font-weight: 400;
   font-size: 0.8em;
   color: #666;
+  line-height: 160%;
 }
 
-#foot-copy {
-  margin-top: 5px;
+#emoji {
+  font-size: 1.2em;
 }
 
 
