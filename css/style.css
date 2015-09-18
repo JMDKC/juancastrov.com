@@ -107,7 +107,7 @@ section {
 }
 
 #section-about p, #section-social p {
-  padding-left: 5px;
+  padding-left: 4px;
 }
 
 #section-projects {
@@ -151,7 +151,9 @@ section #ghLink {
 }
 
 #section-social ul {
-  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
   font-size: 1em;
 }
 
@@ -185,7 +187,11 @@ footer {
   font-weight: 400;
   font-size: 0.8em;
   color: #666;
-  line-height: 160%;
+  line-height: 140%;
+}
+
+#foot-text {
+  margin-top: 5px;
 }
 
 #emoji {
