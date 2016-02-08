@@ -90,10 +90,10 @@ li, li img {
   background-color: #ff6346;
   color: #fff;
   text-decoration: none;
-  padding: 1px 3px 1px;
+  padding: 3px;
   display: block;
   margin-left: auto; margin-right: auto;
-  width: 210px;
+  width: 260px;
 }
 
 
@@ -109,6 +109,7 @@ section {
 
 #section-about p, #section-social p {
   padding-left: 4px;
+  font-size: 1.1em;
 }
 
 #section-projects {
@@ -199,7 +200,6 @@ footer {
   font-size: 1.2em;
 }
 
-
 /* ---------------------------------
   MEDIA QUERIES
 --------------------------------- */
@@ -226,7 +226,6 @@ footer {
 
   #section-projects {
     width: 90%;
-    
   }
 
   .separator {
@@ -247,8 +246,8 @@ footer {
   }
 
   #presentation u {
-    padding: 0px 4px 0px;
-    width: 225px;
+    padding: 4px ;
+    width: 275px;
   }
 
   #headerImg {
@@ -279,6 +278,22 @@ footer {
     margin-right: 1.66667%;
     margin-left: 1.66667%;
     margin-bottom: 0;
+  }
+
+  #row-2 {
+    clear: both;
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  #row-2 #left {
+    margin-left: 18%;;
+    margin-right: 2%;
+  }
+
+  #row-2 #right {
+    margin-right: 18%;
+    margin-left: 2%;
   }
 
   section h2 {
