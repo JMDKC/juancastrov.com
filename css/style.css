@@ -1,13 +1,14 @@
-
 /* ---------------------------------
   GENERAL & RESETTING
 --------------------------------- */
 body {
-  font-family: "Arvo", Courier, monospace, Arial;
+  font-family: "Inconsolata", Courier, monospace, Arial;
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 15px;
+  background-color: #eee;
+  color: #292929;
 }
 
 hr {
@@ -62,9 +63,9 @@ li, li img {
 }
 
 #title {
-  width: 62%;
   margin: 30px auto 0;
-  background-color: #ff6346;
+  /*background-color: #ff6346;*/
+  /*color: #ff6346;*/
   padding: 10px 10px 10px;
 }
 
@@ -72,28 +73,34 @@ li, li img {
   font-family: "Montserrat", Helvetica, Arial;
   padding: 0;
   margin: 0;
-  color: #fff;
-  width: 100%;
-  font-size: 1.8em;
+  color: #ff6346;
+  /*width: 100%;*/
+  font-size: 4em;
+  letter-spacing: -1px;
+  border: 5px solid #ff6346;
+  padding: 10px 40px 8px;
+  display: inline-block;
+  font-weight: 400;
 }
 
 #presentation {
-  font-size: 1.3em;
+  font-size: 1.8em;
   margin: 20px auto 0;
   width: 80%;
   text-align: center;
 }
 
 #presentation u {
-  font-style: italic;
+  /*font-style: italic;*/
+  font-weight: 700;
   letter-spacing: 0.2px;
   background-color: #ff6346;
-  color: #fff;
+  color: #eee;
   text-decoration: none;
   padding: 3px;
   display: block;
   margin-left: auto; margin-right: auto;
-  width: 260px;
+  width: 320px;
 }
 
 
@@ -109,7 +116,7 @@ section {
 
 #section-about p, #section-social p {
   padding-left: 4px;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 #section-projects {
@@ -119,8 +126,14 @@ section {
 #section-projects li {
   padding: 5%;
   margin-bottom: 30px;
-  background-color: #EFEFEF;
-  border-radius: 2px;
+  background-color: #fff;
+  /*border-radius: 2px;*/
+  /*border: 1px solid #000;*/
+  font-size: 1.1em;
+}
+
+.h-container {
+  text-align: center;
 }
 
 section h2 {
@@ -131,7 +144,11 @@ section h2 {
   font-size: 1.4em;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  text-align: center;
+  border: 3px solid #ff6346;
+  display: inline-block;
+  padding: 5px 40px 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section p {
@@ -139,11 +156,16 @@ section p {
 }
 
 section .pTitle {
-  font-style: italic;
+  /*font-style: italic;*/
+  font-weight: 700;
   margin-bottom: 10px;
   display: inline-block;
   color: black;
   margin: 15px 0 5px;
+}
+
+section .pTitle u {
+  text-decoration: none;
 }
 
 section .ghLink {
@@ -166,6 +188,7 @@ section .ghLink {
   padding-left: 25px;
   padding-top: 1px;
   margin-bottom: 5px;
+  font-size: 1.1em;
 }
 
 #section-social ul #fb {
@@ -185,7 +208,7 @@ section .ghLink {
 }
 
 footer {
-  font-family: "Montserrat", Helvetica, Arial;
+  /*font-family: "Montserrat", Helvetica, Arial;*/
   font-weight: 400;
   font-size: 0.8em;
   color: #666;
@@ -203,6 +226,13 @@ footer {
 /* ---------------------------------
   MEDIA QUERIES
 --------------------------------- */
+
+@media (max-width: 400px) {
+  #title h1 {
+    font-size: 2.5em;
+  }
+}
+
 @media (min-width: 740px) {
   
   #mobile {
@@ -215,12 +245,13 @@ footer {
   }
 
   header {
-    margin: 70px auto 20px auto;
-    width: 520px;
+    margin: 0 auto 20px auto;
+    /*width: 520px;*/
+    /*background-color: #ff6346;*/
   }
 
   section {
-    width: 500px;
+    width: 700px;
     overflow: auto;
   }
 
@@ -235,24 +266,25 @@ footer {
   }
 
   #title {
-    margin-top: 0;
-    width: 330px;
+    padding: 30px 0 30px;
+    width: 80%;
+    /*border: 5px solid #ff6346;*/
   }
 
   #headerBody {
-    padding-top: 5px;
-    width: 70%;
-    margin-left: 160px;
+    /*padding: 5px;*/
+    width: 100%;
+    /*margin-left: 160px;*/
   }
 
   #presentation u {
     padding: 4px ;
-    width: 275px;
+    /*width: 275px;*/
   }
 
   #headerImg {
     float: left;
-    width: 30%;
+    width: 150px;
   }
 
   #headerImg img {
@@ -261,9 +293,9 @@ footer {
   }
 
   #presentation {
-    max-width: 450px;
+    /*max-width: 450px;*/
     margin: 0 auto 0;
-    font-size: 1.4em;
+    font-size: 1.8em;
     overflow: auto;
   }
 
