@@ -220,12 +220,6 @@ span.vertical-text {
     padding-bottom: 50px;
   }
 
-  section#about > .wrapper {
-    background: url("../img/me.jpeg") no-repeat right bottom;
-    /*background-position: 20px 0;*/
-    background-size: 500px;
-  }
-
   section#about p.lead {
     padding-top: 60px;
     font-size: 1.44em;
@@ -256,9 +250,16 @@ span.vertical-text {
   }
 }
 
+@media screen and (min-width: 930px) {
+  section#about > .wrapper {
+    background: url("../img/me.jpeg") no-repeat right bottom;
+    background-size: 500px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
    header span.title {
-    padding-left: 0px;
+    /*padding-left: 0px;*/
   }
 }
 
@@ -280,6 +281,10 @@ span.vertical-text {
 
   section#about > .wrapper {
     background-size: 600px;
+  }
+
+  img#mask, canvas {
+    top: 52px;
   }
 }
 
