@@ -1,236 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 
-    <title>Juan José Castro</title>
+	<!-- WEB FONTS (GOOGLE / TYPEKIT) -->
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,500' rel='stylesheet' type='text/css'>
+	<script src="https://use.typekit.net/csq2lfi.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <!-- GOOGLE FONTS -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Arvo:400italic,400' rel='stylesheet' type='text/css'> -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- MAIN -->
+	<meta charset="utf-8">
+	<title>Juan José Castro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- MISC -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base target="_blank">
-  </head>
+	<!-- JAVASCRIPT -->
+	<script src="js/p5.min.js" type="text/javascript"></script>
+  <script src="js/sketch.js" type="text/javascript"></script>
 
-  <body>
-    <div id="wrapper">
-    <!-- BEGIN WRAPPER & BODY -->
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 
-      <!-- HEADER -->
-      <header>
-        <!-- <div id="headerImg">
-          <img src="img/me.png" alt="This is me!">
-        </div> -->
+	<header>
+		<div class="wrapper">
+			<span class="title">Juan José Castro</span>
+			<ul class="main-menu">
+				<li class="active">
+					<a href="">
+						<span>About</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span>Work</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span>Else</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span>Contact</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
 
-        <div id="headerBody">
-          <div id="title">
-              <h1> JUAN JOSÉ CASTRO </h1>
-          </div>
+	<section id="about">
+		<div class="wrapper" id="sketch-holder">
 
-          <div id="presentation">
-            <p> I'm a CS student and <u>web developer/designer</u> based in Bogotá, Colombia.</p>
-          </div>
-        </div>
-      </header>
-      <!-- END HEADER -->
+			<h1>
+				I’m a <b>web developer</b> and <b>designer</b>
+				based in Bogotá, Colombia.
+			</h1>
 
-      <hr class="separator">
+			<img src="img/bkg-01.png" class="mobile-tag">
 
-      <!-- MAIN -->
-      <section id="section-about">
-        <div class="h-container"><h2> About me </h2></div>
-        <p>
-          My greatest passion is creating <u>interactive experiences using code.</u>
-        </p>
-        <p>
-          When I'm not <a href="https://github.com/jjcastro">writing code</a>,
-          <a href="https://github.com/jjcastro/processing-experiments">playing around on processing</a>, 
-          <a href="http://fb.com/juanjosecv">browsing cute dogs</a>, 
-          <a href="http://instagram.com/jjcastrov">taking pictures</a>, or 
-          <a href="https://open.spotify.com/user/josecastrovaron">listening to music</a>, 
-          I'm a full time student at 
-          <a href="http://www.uniandes.edu.co">Uniandes</a>, where I major in CS and minor in Design.
-          Feel free to reach me out on social media, or 
-          <a href="mailto:jj.castro10@uniandes.edu.co">email me</a>.
-        </p>
-      </section>
-      <!-- END MAIN -->
+			<p class="lead">
+				I live and breathe all things web and interactive. This is my online home.
+			</p>
 
-      <hr class="separator">
+			<p class="small">
+				When I'm not writing code, playing around on processing, browsing cute dogs, taking pictures, or listening to music, I'm a full time student at Uniandes, where I major in CS and minor in Design. Feel free to reach me out on social media, or email me.
+			</p>
 
-      <!-- PROJECTS -->
-      <section id="section-projects">
-        <div class="h-container"><h2>Stuff I've made</h2></div>
-        <ul id="row-1">
-          <li>
-            <img src="img/porc.png" alt="julianacastrov.com">
-            <div class="description">
-              <span class="pTitle">
-                >> <u>Porc - Expense managing web app</u>
-              </span>
-              <p>
-                When I couldn't find a expense tracker I liked with a well designed, intuitive web interface, I decided to create one myself. Porc is the result of weeks of tireless development and thorough visual/interaction design. While it is still a work in progress, it is currently being beta tested, and an iOS version is on the works. 
-              </p>
-              <div class="ghLink">
-                <a href="https://github.com/jjcastro/porc">
-                  > Check it out on Github
-                </a><!-- <br>
-                <a href="http://porc">
-                  > porc.co
-                </a> -->
-              </div>
-            </div>
-          </li>
-          <li>
-            <img src="img/corgi-250x250.gif" alt="Corgi blur filter">
-            <div class="description">
-              <span class="pTitle">
-                >> <u>Processing experiments</u>
-              </span>
-              <p>
-                Mostly while experimenting on <a href="http://processing.org">Processing</a> for my Interactive Media Design class, I ended up designing and coding quite a few small, self-contained interactive 'games' or animations, exploring techniques such as image processing, pixel sorting, generative design and cellular automata.
-              </p>
-              <div class="ghLink">
-                <a href="https://github.com/jjcastro/processing-experiments">
-                  > Check it out on Github
-                </a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <img src="img/badarte.gif" alt="BADARTE webpage">
-            <div class="description">
-              <span class="pTitle">
-                >> <u>BADARTE</u>
-              </span>
-              <p>
-                As a project for our Web Design class, me and a couple of friends designed a new website proposal for the <a href="https://arte.uniandes.edu.co/banco-de-imagenes/">Banco de Archivos Digitales</a> at <a href="http://www.uniandes.edu.co">Uniandes</a>. We got such great feedback on the project that we were asked to build a fully functional prototype, using Omeka CMS, to serve as a template for future development.
-              </p>
-              <div class="ghLink">
-                <a href="https://github.com/jjcastro/badarte-theme">
-                  > See theme source on Github
-                </a>
-              </div>
-            </div>
-          </li>
-        </ul>
+			<div id="a">
+			<span class="vertical-text"> ← check out my work</span>
+			</div>
 
-        <ul id="row-2">
-          <li>
-            <img src="img/julianacastrov.gif" alt="julianacastrov.com">
-            <div class="description">
-              <span class="pTitle">
-                >> <u>Work portfolio - Juliana C.V.</u>
-              </span>
-              <p>
-                When her old webpage was going stale, my sister and I took upon creating a new online home for her work on a less restrictive platform with a responsive layout. It was prototyped, built and deployed using <a href="http://wordpress.org">Wordpress</a> on a VPS, reaching almost 10K page views within 3 months. I learnt a great deal about PHP, the linux shell and server administration. 
-              </p>
-              <div class="ghLink">
-                <a href="http://julianacastrov.com">
-                  > julianacastrov.com
-                </a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <img src="img/postales.gif" alt="Espacios Ilustrados">
-            <div class="description">
-              <span class="pTitle">
-                >> <u>Espacios Illustrados</u>
-              </span>
-              <p>
-                To showcase her artwork for her undergrad final year proyect, my sister and I built Espacios Ilustrados as a theme on Tumblr from the ground up. While it's pretty simple and straightforward, it was my first experience doing making webpages, and I've been hooked ever since.
-              </p>
-              <div class="ghLink">
-                <a href="http://espaciosilustrados.com/tagged/postales">
-                  > espaciosilustrados.com
-                </a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <img src="img/logo-itinerapp-01.png" alt="Iitnerapp logo">
-            <div class="description">
-              <span class="pTitle">
-                >> <u>Itinerapp</u>
-              </span>
-              <p>
-                As the project for our Team Software Development class, me and a team of 5 people took upon creating a full-fledged vacation planning web app, using AngularJS on the frontend and Java EE on the backend. While I was actively involved in all aspects of development, I designed and coded most of the frontend (UI/UX) look and features.
-              </p>
-              <div class="ghLink">
-                <a href="https://github.com/jjcastro/itinerapp">
-                  > Check it out on GitHub
-                </a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!-- ENDO PROJECTS -->
-      
-      <hr class="separator">
+			<img id="mask" src="img/mask.svg">
+		</div>
+	</section>
 
-      <!-- SOCIAL -->
-      <section id="section-social">
-        <div class="h-container"><h2> Get in touch </h2></div>
-        <p>
-          Feel free to connect with me on any of the social media links below, or <a href="mailto:jj.castro10@uniandes.edu.co">email me</a>.
-        </p>
-
-        <ul>
-          <li id="fb">
-            <a href="http://fb.com/juanjosecv">
-              Facebook
-            </a>
-          </li>
-          <li id="ig">
-            <a href="http://instagram.com/jjcastrov">
-              Instagram
-            </a>
-          </li>
-          <li id="li">
-            <a href="https://co.linkedin.com/pub/juan-josé-castro/9a/2b8/54">
-              LinkedIn
-            </a>
-          </li>
-          <li id="gh">
-            <a href="https://github.com/jjcastro">
-              Github
-            </a>
-          </li>
-        </ul>
-
-        <p>
-          Are you interested in <u>hiring me</u>? <a href="files/resume-may2016.pdf">Here's a link to my resume</a>.
-        </p>
-      </section>
-      <!-- END SOCIAL -->
-
-      <hr class="separator">
-
-      <!-- FOOTER -->
-      <footer>
-        Cute corgi pic by <a href="https://www.facebook.com/kasumi.kitada">Kasumi Kitada</a>. 
-        <span id="mobile"><span id="emoji">🐶</span><br></span>
-        Made possible by <a href="https://www.google.com/fonts">Google Fonts</a>.
-        <br>
-        <div id="foot-text">
-          Designed and coded by me.
-          <br>
-          J.J. Castro &copy; 2015.
-        </div>
-      </footer>
-      <!-- END FOOTER -->
-
-    <!-- END WRAPPER & BODY -->
-    </div> 
-  </body>
-
+</body>
 </html>
