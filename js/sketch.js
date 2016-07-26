@@ -16,6 +16,7 @@ function setup() {
   yPos = random(0, height);
 
   minDistance = random(200, 400);
+  frameRate(30); 
 }
 
 function draw() {
@@ -31,7 +32,7 @@ function draw() {
       fill(0, 0, 0, defaultColor);
       
       if(distance < minDistance) {
-        size = map(distance, minDistance, 0, 2, 8);
+        size = map(distance, minDistance, 0, 2, 12);
         fill(245, 86, 103,
           map(distance, minDistance, 10, defaultColor, 100) + random(-5, 5));
       } 
