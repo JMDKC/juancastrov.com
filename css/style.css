@@ -2,299 +2,226 @@
 /* GENERAL
 =================== */
 
+/*
+  PINK: F55667;
+  BLACK: 353434;
+  WHITE: F5F5F0;
+*/
+
+/*@font-face {
+  font-family: 'abril';
+  src: url('../fonts/AbrilDisplay-Regular.otf');
+}
+@font-face {
+  font-family: 'abril-fatface';
+  src: url('../fonts/AbrilDisplay-Black.otf');
+}
+@font-face {
+  font-family: 'brandon-bold';
+  src: url('../fonts/Brandon_bld.otf');
+}
+@font-face {
+  font-family: 'brandon-black';
+  src: url('../fonts/Brandon_blk.otf');
+}*/
+
+/* ================== */
+
 * {
-  /*transition: all 0.4s ease;*/
+  /*transition: all 0.3s ease;*/
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  padding-bottom: 1000px;
-  font-size: 16px;
+  font-family: 'abril-display', serif;
+  font-size: 20px;
   line-height: 1.8em;
+  background-color: #F5F5F0;
+  color: #353434;
 }
 
-/* HEADER
-=================== */
+a {
+  color: #353434;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "brandon-grotesque", sans-serif;
+  color: #F55667;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
 
 header {
-  text-align: center;
-  position: fixed;
+  /*opacity: 0;*/
+  /*position: fixed;
+  top: 0;*/
+  background-color: #F5F5F0;
   width: 100%;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 25px 0 10px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-
-  z-index: 20;
+  text-align: center;
+  height: 100px;
+  color: #F55667;
 }
 
-header span.title {
-  font-size: 2.11em;
-
-  font-family: 'mono45-headline', sans-serif;
-  text-transform: uppercase;
+header > .wrapper {
+  position: relative;
 }
 
-header ul.main-menu {
-  font-size: 1.3em;
+header a span.logo {
+  font-family: 'abril-fatface';
+  font-size: 3em;
+  line-height: 100px;
+  color: #F55667;
+  position: absolute;
+  left: 10px;
 
-  font-family: 'motor', sans-serif;
+}
+
+header a:hover span.logo {
+  text-shadow: 0px 1px #353434;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header ul {
+  display: inline-block;
   padding: 0;
   margin: 0;
 }
 
-header ul.main-menu > li {
-  display: inline-block;
+header ul.main-menu {
+  /*border-bottom: 1px solid #F55667;*/
+  margin-top: 22px;
+  position: relative;
 }
 
-header ul.main-menu > li > a > span:before {
-  content: "";
+header ul.main-menu:before {
+  content : "";
   position: absolute;
-  bottom: 0;
-  height: 1px;
-  
-  border-bottom: 0.15em solid #FF4F27;
-  box-shadow: inset 0px -1px #FF4F27;
-
-  width: 0%;
-  left: 50%;
-
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  left    : 13px;
+  bottom  : 0;
+  height  : 1px;
+  width   : calc(100% - 26px);  /* or 100px */
+  border-bottom: 1px solid #353434;
 }
 
-header ul.main-menu > li > a:hover > span:before,
-header ul.main-menu > li.active > a > span:before {
-  left: 0%;
-  width: 100%;
+header ul.main-menu > li {
+  padding: 0 5px;
 }
 
 header ul.main-menu > li > a {
-  padding: 0 10px;
+  display: inline-block;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #353434;
+  padding: 8px;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+header ul.main-menu > li.active > a,
+header ul.main-menu > li > a:hover {
+  color: #F55667;
+}
+
+
+header ul.social-menu {
+  right: 0;
+  position: absolute;
+  /*line-height: 110px;*/
+  margin-top: 25px;
+  margin-right: -10px;
+}
+
+header ul.social-menu > li {
+  /*width: 20px;*/
+  padding: 10px;
+}
+
+header ul.social-menu a > div#ig {
+  background: url(../img/ig.png) no-repeat;
+  background-size: 23px;
+}
+
+header ul.social-menu a > div#fb {
+  background: url(../img/fb.png) no-repeat;
+  background-size: 23px;
+}
+
+header ul.social-menu a > div {
+  width: 23px;
+  height: 23px;
+}
+
+header ul > li {
   display: inline-block;
 }
 
-header ul.main-menu > li > a > span {
+section#intro {
+  height: 100vh;
   position: relative;
-  color: #000;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 0;
-}
-
-/* ABOUT SECTION 
-=================== */
-
-section#about > div.wrapper {
-  padding: 100px 20px 0;
+  top:0;
+  width: 100%;
   overflow: auto;
+  /*border-bottom: 1px solid rgba(0,0,0,1);*/
+  /*margin-bottom: 20px;*/
 }
 
-section#about p {
-  font-weight: 300;
-}
-
-section#about p.lead {
-  font-size: 1.2em;
-  font-weight: 400;
-}
-
-img.mobile-tag {
-  width: 30%;
-  margin: 25px auto 40px;
+section#intro span.title {
+  font-family: 'abril-fatface';
+  font-size: 4em;
+  line-height: 1.2em;
   display: block;
+  letter-spacing: 3px;
 }
 
-section#about h1 {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-top: 40px;
-  line-height: 1.4em;
-  /*background: url("../img/bkg-01.png") no-repeat 20% top;
-  background-size: 70%;
-  padding: 20px 0 40px;*/
+section#intro span.sub {
+  font-family: "brandon-grotesque";
+  font-weight: 900;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #F55667;
+  letter-spacing: 5px;
 }
 
-section#about h1 > b {
-  font-weight: 500;
+section#intro > .main-wrapper {
+  /*padding-top: 50vh;*/
+  /*margin-top: -1.7em;*/
+  height: 7em;
+  /*background-color: #fff;*/
+  text-align: center;
+  /*display: block;*/
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -3.5em;
+  z-index: 2;
+}
+
+section#intro a.anchor {
+  position: absolute;
+  width: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 40px;
+  padding: 20px;
+  z-index: 2;
 }
 
 canvas {
-  display: none;
-
-  /*vertical-align: top;*/
+  z-index: 1;
   position: absolute;
-  z-index: -2;
+  top: 0;
+  width: 100%;
+  height: 100vh;
 }
-
-img#mask {
-  display: none;
-
-  position: absolute;
-  
-  width: 350px;
-  height: 350px;
-  z-index: -1;
-}
-
-section#about h1 {
-  max-width: calc(100% - 30px);
-}
-
-span.vertical-text {
-  transform: rotate(270deg);
-  transform-origin: left top 0;
-  float: left;
-  font-size: 1em;
-  color: #ccc;
-
-  position: absolute;
-  top: 295px;
-  right: -6.6em;
-  /*right: 0;*/
-
-  font-family: 'motor', sans-serif;
-}
-
-/* MEDIA QUERIES 
-=================== */
-
-@media screen and (min-width: 768px) {
- 
-  /* GENERAL
-  =================== */
-
-  .wrapper {
-    max-width: 970px;
-    margin: 0 auto;
-  }
-
-  /* HEADER
-  =================== */
-
-  header {
-    text-align: left;
-    padding: 25px 0 25px;
-  }
-
-  header > .wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-    /*position: relative;*/
-  }
-
-  header ul.main-menu {
-    float: right;
-  }
-
-  header span.title {
-    padding-top: 10px;
-    display: inline-block;
-    font-size: 2.11em;
-    /*padding-left: 20px;*/
-  }
-
-  header ul.main-menu {
-    font-size: 1.56em;
-    margin-top: -2px;
-    margin-right: -10px;
-  }
-
-  /* ABOUT SECTION
-  =================== */
-
-  img#mask, canvas {
-    display: block;
-    top: 50px;
-  }
-
-  section#about {
-    /*position: relative;*/
-    
-    /*padding-bottom: 40px;*/
-    border-bottom: 2px solid #f2f2f2;
-  }
-
-  section#about p.small {
-    padding-bottom: 50px;
-  }
-
-  section#about p.lead {
-    padding-top: 60px;
-    font-size: 1.44em;
-    line-height: 1.6em;
-  }
-
-  section#about h1 {
-    font-size: 2em;
-    max-width: 630px;
-    padding-left: 70px;
-    padding-top: 40px;
-    /*z-index: 30;*/
-  }
-
-  section#about p {
-    width: 430px;
-    line-height: 2em;
-    margin-left: 130px;
-  } 
-
-  img.mobile-tag {
-    display: none;
-  }
-
-  span.vertical-text {
-    font-size: 1.4em;
-    top: 490px;
-  }
-}
-
-@media screen and (min-width: 930px) {
-  section#about > .wrapper {
-    background: url("../img/me.jpeg") no-repeat right bottom;
-    background-size: 500px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-   header span.title {
-    /*padding-left: 0px;*/
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  body {
-    font-size: 17px;
-  }
-
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  section#about p {
-    width: 470px;
-    padding-left: 90px;
-  }
-
-
-  section#about > .wrapper {
-    background-size: 600px;
-  }
-
-  img#mask, canvas {
-    top: 52px;
-  }
-}
-
-/*@media screen and (min-width: 1440px) {
-  body {
-    font-size: 20px;
-  }
-
-  .wrapper {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-}*/

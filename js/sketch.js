@@ -1,20 +1,47 @@
-var img;
+
+var defaultColor = 50;
+var a = 0;
+
+var xPos, yPos, minDistance;
 
 function setup() {
-  var canvas = createCanvas(350, 350);
-  canvas.parent('sketch-holder');
-  img = loadImage("img/gradient.png");
-  background(255);
+  var canvas = createCanvas(windowWidth, windowHeight);
+  var density = displayDensity();
+  pixelDensity(density);
+  canvas.parent('intro');
+  noStroke();
+  fill(53, 52, 52, 200);
+  
+  xPos = random(0, width);
+  yPos = random(0, height);
+
+  minDistance = random(200, 400);
 }
 
 function draw() {
-  var opp = mouseY - 175;
-  var adj = mouseX - 175;
-  
-  var angle = atan(opp / (adj === 0 ? 1 : adj));
-  
-  translate(width/2, height/2);
-  rotate( adj >= 0 ? angle : PI + angle);
+  background(245, 245, 240, 200);
 
-  image(img, -175, -175);
+
+
+  for(var x = 0; x < width; x+= 30) {
+    for(var y = 0; y < height; y+= 30) {
+      var size = 2;
+      var distance = dist(mouseX, mouseY, x, y);
+      
+      fill(0, 0, 0, defaultColor);
+      
+      if(distance < minDistance) {
+        size = map(distance, minDistance, 0, 2, 8);
+        fill(245, 86, 103,
+          map(distance, minDistance, 10, defaultColor, 100) + random(-5, 5));
+      } 
+      rect(x, y, size, size);
+    }
+  }
+
+  xPos += random(-50, 50);
+  yPos += random(-50, 50);
+
+a++;
+  minDistance = 500 + (sin(a/8) * 400);
 }

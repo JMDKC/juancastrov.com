@@ -2,8 +2,7 @@
 <html>
 <head>
 
-	<!-- WEB FONTS (GOOGLE / TYPEKIT) -->
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,500' rel='stylesheet' type='text/css'>
+	<!-- WEB FONTS (TYPEKIT) -->
 	<script src="https://use.typekit.net/csq2lfi.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -12,18 +11,34 @@
 	<title>Juan José Castro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
 	<script src="js/p5.min.js" type="text/javascript"></script>
   <script src="js/sketch.js" type="text/javascript"></script>
 
   <!-- STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
 </head>
 <body>
 
+	<section id="intro">
+		<div class="main-wrapper">
+			<span class="title">Juan José Castro</span>
+			<span class="sub">Web developer & designer</span>
+		</div>
+		<a href="" class="anchor">
+			<img src="img/triangle.svg">
+		</a>
+	</section>
+
 	<header>
 		<div class="wrapper">
-			<span class="title">Juan José Castro</span>
+			<a href="">
+				<span class="logo">
+					jjc
+				</span>
+			</a>
 			<ul class="main-menu">
 				<li class="active">
 					<a href="">
@@ -40,9 +55,16 @@
 						<span>Else</span>
 					</a>
 				</li>
+			</ul>
+			<ul class="social-menu">
 				<li>
 					<a href="">
-						<span>Contact</span>
+						<div id="ig"></div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div id="fb"></div>
 					</a>
 				</li>
 			</ul>
@@ -50,28 +72,14 @@
 	</header>
 
 	<section id="about">
-		<div class="wrapper" id="sketch-holder">
-
+		<div class="wrapper">
 			<h1>
-				I’m a <b>web developer</b> and <b>designer</b>
-				based in Bogotá, Colombia.
+				About me
 			</h1>
-
-			<img src="img/bkg-01.png" class="mobile-tag">
-
-			<p class="lead">
-				I live and breathe all things web and interactive. This is my online home.
-			</p>
-
-			<p class="small">
+			<hr>
+			<p>
 				When I'm not writing code, playing around on processing, browsing cute dogs, taking pictures, or listening to music, I'm a full time student at Uniandes, where I major in CS and minor in Design. Feel free to reach me out on social media, or email me.
 			</p>
-
-			<div id="a">
-			<span class="vertical-text"> ← check out my work</span>
-			</div>
-
-			<img id="mask" src="img/mask.svg">
 		</div>
 	</section>
 
