@@ -2,35 +2,6 @@
 /* GENERAL
 =================== */
 
-/*
-  PINK: F55667;
-  BLACK: 353434;
-  WHITE: F5F5F0;
-*/
-
-/*@font-face {
-  font-family: 'abril';
-  src: url('../fonts/AbrilDisplay-Regular.otf');
-}
-@font-face {
-  font-family: 'abril-fatface';
-  src: url('../fonts/AbrilDisplay-Black.otf');
-}
-@font-face {
-  font-family: 'brandon-bold';
-  src: url('../fonts/Brandon_bld.otf');
-}
-@font-face {
-  font-family: 'brandon-black';
-  src: url('../fonts/Brandon_blk.otf');
-}*/
-
-/* ================== */
-
-* {
-  /*transition: all 0.3s ease;*/
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -51,8 +22,19 @@ h1 {
   color: #F55667;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 0.9em;
 }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #353434;
+  max-width: 50px;
+  margin: 10px auto 10px 0;
+}
+
+/* HEADER
+=================== */
 
 header {
   /*opacity: 0;*/
@@ -164,18 +146,19 @@ header ul > li {
   display: inline-block;
 }
 
+/* INTRO
+=================== */
+
 section#intro {
   height: 100vh;
   position: relative;
   top:0;
   width: 100%;
   overflow: auto;
-  /*border-bottom: 1px solid rgba(0,0,0,1);*/
-  /*margin-bottom: 20px;*/
 }
 
 section#intro span.title {
-  font-family: 'abril-fatface';
+  font-family: 'abril-fatface', serif;
   font-size: 4em;
   line-height: 1.2em;
   display: block;
@@ -183,7 +166,7 @@ section#intro span.title {
 }
 
 section#intro span.sub {
-  font-family: "brandon-grotesque";
+  font-family: "brandon-grotesque", sans-serif;
   font-weight: 900;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -192,13 +175,8 @@ section#intro span.sub {
 }
 
 section#intro > .main-wrapper {
-  /*padding-top: 50vh;*/
-  /*margin-top: -1.7em;*/
   height: 7em;
-  /*background-color: #fff;*/
   text-align: center;
-  /*display: block;*/
-
   position: absolute;
   width: 100%;
   left: 0;
@@ -222,6 +200,45 @@ canvas {
   z-index: 1;
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100vh;
+  width: 100% !important;
+  height: 100vh !important;
+  overflow: hidden;
+  display: block;
+}
+
+/* ABOUT
+=================== */
+
+p > a {
+  text-decoration: underline;
+}
+
+section#about {
+  padding-bottom: 800px;
+}
+
+section#about p {
+  max-width: 480px;
+  float: left;
+}
+
+section#about p b {
+  color: #F55667;
+  letter-spacing: 0.7px;
+}
+
+section#about p.side {
+  font-family: 'abril-fatface';
+  font-size: 1.5em;
+  line-height: 1.7em;
+  color: #F55667;
+  float: right;
+  width: 340px;
+  /*margin-right: 30px;*/
+}
+
+section#about p.side > a {
+  text-decoration: none;
+  border-bottom: 2px solid #F55667;
+  box-shadow: inset 0px -1px #F55667;
 }
