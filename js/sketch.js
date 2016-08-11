@@ -16,21 +16,24 @@ function setup() {
 }
 
 function draw() {
-  background(245, 245, 240, 200);
+  background(255);
 
   for(var x = 0; x < width; x+= 30) {
-    for(var y = 0; y < height; y+= 30) {
+    for(var y = 0; y < height + 30; y+= 30) {
       var size = 2;
       var distance = dist(mouseX, mouseY, x, y);
       
       if(distance < minDistance) {
         size = map(distance, minDistance, 0, 2, 12);
-        fill(245, 86, 103,
+        fill(87, 115, 244,
           map(distance, minDistance, 10, defaultColor, 80));
       } else {
         fill(0, 0, 0, defaultColor);
       }
-      rect(x, y, size, size);
+
+      var offset = x % 60 == 0 ? 50 : 0;
+
+      rect(x, y - offset, size, size);
     }
   }
 

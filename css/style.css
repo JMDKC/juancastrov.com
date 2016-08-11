@@ -8,7 +8,7 @@ body {
   font-family: 'abril-display', serif;
   font-size: 20px;
   line-height: 1.8em;
-  background-color: #F5F5F0;
+  background-color: #fff; /*#fff;*/
   color: #353434;
 }
 
@@ -40,7 +40,7 @@ header {
   /*opacity: 0;*/
   /*position: fixed;
   top: 0;*/
-  background-color: #F5F5F0;
+  background-color: #fff;
   width: 100%;
   text-align: center;
   height: 100px;
@@ -241,4 +241,5 @@ section#about p.side > a {
   text-decoration: none;
   border-bottom: 2px solid #F55667;
   box-shadow: inset 0px -1px #F55667;
+  font-size: 1.38em;
 }
