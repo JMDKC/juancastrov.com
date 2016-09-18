@@ -3,5 +3,241 @@
 =================== */
 
 body {
-  font-family: 'acumin-pro', serif;
+  font-family: 'museo-sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #F5F5F0;
+  overflow: auto;
+  padding: 40px 25px;
+  position: relative;
+}
+
+header img.logo {
+  width: 2em;
+  opacity: 0.18;
+  margin-bottom: 30px;
+}
+
+header h1#title {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+header span#subtitle {
+  display: block;
+  font-weight: 100;
+  color: #4D4D4D;
+}
+
+a, a:active, a:visited, a:focus, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+header a.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  font-size: 0.6em;
+  color: #C9C9C5;
+  display: inline-block;
+  padding: 8px;
+  margin-left: -8px;
+  margin-top: 10px;
+}
+
+header ul.social-links {
+  padding: 20px 0 0;
+  margin: 0;
+  list-style: none;
+  /*float: right;*/
+  /*clear: both;*/
+  display: block;
+  text-align: right;
+  margin-right: -15px;
+  margin-bottom: -5px;
+}
+
+header ul.social-links > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header ul.social-links > li > a {
+  padding: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  font-size: 0.66em;
+}
+
+ul.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+ul.projects > li:first-child {
+  border-top: 1px solid #F5F5F0;
+}
+
+ul.projects > li {
+  border-bottom: 1px solid #F5F5F0;
+  /*margin-bottom: -1px;*/
+}
+
+ul.projects > li.light-blue > a:hover
+{ box-shadow: inset -100vw 0px #3195F9; }
+ul.projects > li.light-blue > a
+{ box-shadow: inset -8px 0px #3195F9; }
+ul.projects > li.red > a:hover
+{ box-shadow: inset -100vw 0px #F55667; }
+ul.projects > li.red > a
+{ box-shadow: inset -8px 0px #F55667; }
+ul.projects > li.blue > a:hover
+{ box-shadow: inset -100vw 0px #955BFF; }
+ul.projects > li.blue > a
+{ box-shadow: inset -8px 0px #955BFF; }
+ul.projects > li.carmine > a:hover
+{ box-shadow: inset -100vw 0px #E94142; }
+ul.projects > li.carmine > a
+{ box-shadow: inset -8px 0px #E94142; }
+ul.projects > li.pink > a:hover
+{ box-shadow: inset -100vw 0px #F1868E; }
+ul.projects > li.pink > a
+{ box-shadow: inset -8px 0px #F1868E; }
+ul.projects > li.yellow > a:hover
+{ box-shadow: inset -100vw 0px #FCEF44; }
+ul.projects > li.yellow > a
+{ box-shadow: inset -8px 0px #FCEF44; }
+ul.projects > li.green > a:hover
+{ box-shadow: inset -100vw 0px #81E6C8; }
+ul.projects > li.green > a
+{ box-shadow: inset -8px 0px #81E6C8; }
+
+
+ul.projects > li > a {
+  padding: 30px 25px 32px;
+  display: block;
+  transition: box-shadow ease 0.4s;
+  margin-bottom: -1px;
+  /*box-shadow: inset 8px 0px #F55667;*/
+}
+
+ul.projects > li > a span {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 0.7em;
+  font-weight: 500;
+  /*color: #E6E6E6;*/
+  opacity: 0.25;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+ul.projects > li > a h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 1.33em;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+
+  header {
+    width: 40%;
+    float: left;
+    height: 100vh;
+    padding: 40px 10px 40px 5%;
+  }
+
+  section {
+    width: 60%;
+    float: right;
+  }
+
+  header img.logo {
+    position: absolute;
+    top: 5vw;
+    display: block;
+  }
+
+  header div.head {
+    position: absolute;
+    top: 50vh;
+    margin-top: -80px;
+    /*height: 136px;*/
+  }
+
+  header ul.social-links {
+    display: block;
+    text-align: left;
+    position: absolute;
+    bottom: 5vw;
+  }
+
+  header ul.social-links > li {
+    display: block;
+    margin-right: 10px;
+  }
+
+  header ul.social-links > li > a {
+    padding: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    font-size: 0.66em;
+  }
+
+  ul.projects > li > a > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  ul.projects > li > a {
+    padding: 0 40px;
+    height: 16.66vh;
+  }
+
+  ul.projects > li > a {
+    transition: box-shadow ease 0.5s;
+  }
+
+  ul.projects > li.light-blue > a
+  { box-shadow: inset -15px 0px #3195F9; }
+  ul.projects > li.red > a
+  { box-shadow: inset -15px 0px #F55667; }
+  ul.projects > li.blue > a
+  { box-shadow: inset -15px 0px #955BFF; }
+  ul.projects > li.carmine > a
+  { box-shadow: inset -15px 0px #E94142; }
+  ul.projects > li.pink > a
+  { box-shadow: inset -15px 0px #F1868E; }
+  ul.projects > li.yellow > a
+  { box-shadow: inset -15px 0px #FCEF44; }
+  ul.projects > li.green > a
+  { box-shadow: inset -15px 0px #81E6C8; }
 }
