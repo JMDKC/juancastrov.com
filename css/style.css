@@ -85,7 +85,7 @@ ul.projects {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 ul.projects > li:first-child {
@@ -158,6 +158,10 @@ ul.projects > li > a h2 {
   body {
     font-size: 20px;
   }
+
+  ul.projects {
+    /*font-size: 0.em;*/
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -186,7 +190,7 @@ ul.projects > li > a h2 {
   header div.head {
     position: absolute;
     top: 50vh;
-    margin-top: -80px;
+    margin-top: -75px;
     /*height: 136px;*/
   }
 
@@ -200,6 +204,7 @@ ul.projects > li > a h2 {
   header ul.social-links > li {
     display: block;
     margin-right: 10px;
+    margin-top: 10px;
   }
 
   header ul.social-links > li > a {
@@ -214,7 +219,7 @@ ul.projects > li > a h2 {
   ul.projects > li > a > div {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-52%);
   }
 
   ul.projects > li > a {
