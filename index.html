@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
 
 	<!-- WEB FONTS (TYPEKIT) -->
@@ -12,9 +12,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- STYLESHEET -->
-  <link rel="stylesheet" type="text/css" href="css/style.css?v=8765">
+  <link rel="stylesheet" type="text/css" href="css/loading-bar.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css?id=2345">
+
+  <!-- JS -->
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-animate.min.js"></script>
+  <script type="text/javascript" src="js/loading-bar.min.js"></script>
+
+  <script type="text/javascript" src="js/controller.js"></script>
 </head>
-<body>
+<body ng-controller="ctrl">
 
 <header>
 
@@ -24,7 +32,7 @@
 
 	<div class="head">
 		<h1 id="title">Juan Castro V.</h1>
-		<span id="subtitle">Diseñador & desarrollador web.</span>
+		<span id="subtitle">Diseñador & desarrollador.</span>
 		<a class="button" href="">+ Leer más</a>
 	</div>
 
@@ -45,7 +53,13 @@
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Dejemos de matarnos</h2>
+					
+					<div class="tags">
+						<span>Diseño</span>
+						<span>Desarrollo web</span>
+					</div>
 				</div>
+				
 			</a>
 		</li>
 		<li class="light-blue">
@@ -53,6 +67,11 @@
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Magic Markers</h2>
+
+					<div class="tags">
+						<span>Diseño</span>
+						<span>Desarrollo web</span>
+					</div>
 				</div>
 			</a>
 		</li>
@@ -61,6 +80,11 @@
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Become a curator</h2>
+
+					<div class="tags">
+						<span>Diseño</span>
+						<span>Desarrollo full-stack</span>
+					</div>
 				</div>
 			</a>
 		</li>
@@ -68,7 +92,12 @@
 			<a href="">
 				<div>
 					<span>Mayo 2016</span>
-					<h2>Porc.co</h2>
+					<h2>Porc App</h2>
+
+					<div class="tags">
+						<span>Diseño</span>
+						<span>Desarrollo móvil</span>
+					</div>
 				</div>
 			</a>
 		</li>
@@ -77,6 +106,10 @@
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Info de bolsillo</h2>
+
+					<div class="tags">
+						<span>Desarrollo web</span>
+					</div>
 				</div>
 			</a>
 		</li>
@@ -85,6 +118,10 @@
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Juliana Castro V.</h2>
+
+					<div class="tags">
+						<span>Desarrollo web</span>
+					</div>
 				</div>
 			</a>
 		</li>
