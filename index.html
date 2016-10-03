@@ -12,14 +12,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- STYLESHEET -->
-  <link rel="stylesheet" type="text/css" href="css/loading-bar.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css?id=2345">
 
   <!-- JS -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
   <script type="text/javascript" src="js/angular-animate.min.js"></script>
-  <script type="text/javascript" src="js/loading-bar.min.js"></script>
-
+  <script type="text/javascript" src="js/angular-translate.min.js"></script>
   <script type="text/javascript" src="js/controller.js"></script>
 </head>
 <body ng-controller="ctrl">
@@ -30,26 +32,76 @@
 		<img class="logo" src="img/logo.png">
 	</a>
 
-	<div class="head">
+	<div class="head" ng-class="{ higher: readMore }">
 		<h1 id="title">Juan Castro V.</h1>
-		<span id="subtitle">Diseñador & desarrollador.</span>
-		<a class="button" href="">+ Leer más</a>
+		<span id="subtitle">{{ 'TITLE' | translate }}</span>
+		
+		<div class="collapse" id="collapseExample">
+		  <div class="description">
+		    {{ 'DESCRIPTION' | translate }}
+		  </div>
+		</div>
+		<a class="button" href="" ng-click="readMore = !readMore" data-toggle="collapse" data-target="#collapseExample">
+			<span ng-show="!readMore">+ {{ 'READ_MORE' | translate }}</span>
+			<span ng-show="readMore">- {{ 'READ_LESS' | translate }}</span>
+		</a>
 	</div>
 
 	<ul class="social-links">
 		<li>
-			<a href="https://www.instagram.com/jjcastrov/">Instagram</a>
+			<a href="https://instagram.com/jjcastrov/">Instagram</a>
 		</li>
 		<li>
-			<a href="">Facebook</a>
+			<a href="https://fb.com/jjcastrov/">Facebook</a>
 		</li>
 	</ul>
 
 </header>
 <section>
 	<ul class="projects">
-	<li class="carmine">
-			<a href="">
+	<li class="green">
+			<a href="http://porc.co">
+				<div>
+					<span>Mayo 2016</span>
+					<h2>Porc.co App</h2>
+
+					<div class="tags">
+						<span>Diseño</span>
+						<span>Desarrollo web</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<li class="pink">
+			<a href="http://becomeacurator.com">
+				<div>
+					<span>Mayo 2016</span>
+					<h2>Become a curator</h2>
+
+					<div class="tags">
+						<span>Arte</span>
+						<span>Desarrollo web</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	
+		<li class="light-blue">
+			<a href="http://magicmarkers.tv">
+				<div>
+					<span>Mayo 2016</span>
+					<h2>Magic Markers</h2>
+
+					<div class="tags">
+						<span>Diseño</span>
+						<span>Desarrollo web</span>
+					</div>
+				</div>
+			</a>
+		</li>
+
+		<li class="carmine">
+			<a href="http://dejemosdematarnos.com">
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Dejemos de matarnos</h2>
@@ -62,47 +114,10 @@
 				
 			</a>
 		</li>
-		<li class="light-blue">
-			<a href="">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Magic Markers</h2>
-
-					<div class="tags">
-						<span>Diseño</span>
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="pink">
-			<a href="">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Become a curator</h2>
-
-					<div class="tags">
-						<span>Diseño</span>
-						<span>Desarrollo full-stack</span>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="green">
-			<a href="">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Porc App</h2>
-
-					<div class="tags">
-						<span>Diseño</span>
-						<span>Desarrollo móvil</span>
-					</div>
-				</div>
-			</a>
-		</li>
+		
+		
 		<li class="blue">
-			<a href="">
+			<a href="http://infodebolsillo.com">
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Info de bolsillo</h2>
@@ -114,7 +129,7 @@
 			</a>
 		</li>
 		<li class="yellow">
-			<a href="">
+			<a href="http://julianacastrov.com">
 				<div>
 					<span>Mayo 2016</span>
 					<h2>Juliana Castro V.</h2>
