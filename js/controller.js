@@ -9,7 +9,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
     });
    
     $translateProvider.translations('es', {
-      'TITLE': 'Vivo en la internet.',
+      'TITLE': 'Diseñador y desarollador web.',
       'DESCRIPTION': 'Soy diseñador y desarollador web en Bogotá, CO. Lo que hago es concebir, desarrollar y empoderar experiencias en la web, en la intersección entre el diseño, el arte y la tecnología.',
       'READ_MORE': 'Leer más',
       'READ_LESS': 'Leer menos'
@@ -33,7 +33,6 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
         templateUrl : "views/porc.tpl.html"
       })
   })
-
 
   .controller('ctrl', function($scope, $translate) {
     var userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
