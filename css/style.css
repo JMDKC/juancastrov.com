@@ -350,10 +350,12 @@ div.inner-project a.go-back {
 
   ul.projects > li > a {
     transition: box-shadow cubic-bezier(.63,.33,.3,.99) 0.4s;
+    will-change: box-shadow;
   }
 
   ul.projects > li.pink > a {
-    transition: box-shadow cubic-bezier(.83,0,.17,1) 0.4s;
+    transition: box-shadow cubic-bezier(.85,0,.15,1) 0.4s;
+    will-change: box-shadow;
   }
 
   
@@ -428,10 +430,12 @@ div.inner-project a.go-back {
     position: absolute;
     width: 100%;
 
-    -webkit-transition:all 0.4s cubic-bezier(.83,0,.17,1);
-    -moz-transition:all 0.4s cubic-bezier(.83,0,.17,1);
-    -o-transition:all 0.4s cubic-bezier(.83,0,.17,1);
-    transition:all 0.4s cubic-bezier(.83,0,.17,1);
+    -webkit-transition:all 0.4s cubic-bezier(.85,0,.15,1);
+    -moz-transition:all 0.4s cubic-bezier(.85,0,.15,1);
+    -o-transition:all 0.4s cubic-bezier(.85,0,.15,1);
+    transition:all 0.4s cubic-bezier(.85,0,.15,1);
+
+    will-change: right;
   }
 
   [ui-view].ng-leave {
@@ -454,6 +458,7 @@ div.inner-project a.go-back {
   div.inner-project a.go-back {
     transform: scale(1) translate(0,0) rotate(0deg) ;
     transition:all 0.5s ease;
+    will-change: transform;
   }
 
   .ng-enter div.inner-project h1 {
@@ -466,6 +471,7 @@ div.inner-project a.go-back {
     transform: scale(1) translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.1s;
+    will-change: transform;
   }
 
   .ng-enter div.inner-project span.project-subtitle {
@@ -477,6 +483,7 @@ div.inner-project a.go-back {
     transform: translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.2s;
+    will-change: transform;
   }
 
   .ng-enter div.inner-project a.site-anchor {
@@ -488,6 +495,8 @@ div.inner-project a.go-back {
     transform: translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.3s;
+
+    will-change: transform;
   }
 
   .ng-enter div.inner-project p {
@@ -500,6 +509,7 @@ div.inner-project a.go-back {
     transform: translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.4s;
+    will-change: transform;
   }
 
   
