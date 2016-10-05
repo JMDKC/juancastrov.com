@@ -249,13 +249,35 @@ div.inner-project a.site-anchor i {
 
 div.inner-project a.go-back {
   display: inline-block;
-  position: absolute;
-  left: 5vw;
+  position: fixed;
+  left: 45vw;
   top: calc(5vw - 10px);
   font-weight: 900;
   opacity: 0.25;
   /*letter-spacing: 2px;*/
   font-size: 1.75em;
+}
+
+div.inner-project .content {
+  position: relative;
+}
+
+div.inner-project span.hint {
+  /*float: right;*/
+  transform: translateX(50%) rotate(270deg) translateX(-50%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-top: -25px;
+  opacity: 0.15;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.collapsing {
+  /*transition: height 0.3s ease-in-out;*/
 }
 
 
@@ -349,16 +371,8 @@ div.inner-project a.go-back {
   }
 
   ul.projects > li > a {
-    transition: box-shadow cubic-bezier(.63,.33,.3,.99) 0.4s;
-    will-change: box-shadow;
+    transition: all 0.4s cubic-bezier(.63,.33,.3,.99) ;
   }
-
-  ul.projects > li.pink > a {
-    transition: box-shadow cubic-bezier(.85,0,.15,1) 0.4s;
-    will-change: box-shadow;
-  }
-
-  
 
   ul.projects > li > a:hover div.tags > span {
     opacity: 1;
@@ -370,9 +384,18 @@ div.inner-project a.go-back {
     transition: letter-spacing 0.2s ease;
   }
 
+  ul.projects > li > a:hover {
+    transition-delay: 0;
+  }
+
   ul.projects > li > a:hover h2 {
-    letter-spacing: 6px;
-    transition-delay: 0.3s;
+    letter-spacing: 5px;
+    transition-delay: 0.2s;
+  }
+
+  ul.projects > li.carmine > a:hover h2,
+  ul.projects > li.pink > a:hover h2 {
+    letter-spacing: 3.5px;
   }
 
   ul.projects > li > a div.tags > span {
@@ -433,9 +456,7 @@ div.inner-project a.go-back {
     -webkit-transition:all 0.4s cubic-bezier(.85,0,.15,1);
     -moz-transition:all 0.4s cubic-bezier(.85,0,.15,1);
     -o-transition:all 0.4s cubic-bezier(.85,0,.15,1);
-    transition:all 0.4s cubic-bezier(.85,0,.15,1);
-
-    will-change: right;
+    transition:all 0.4s cubic-bezier(.85,0,.15,1);  
   }
 
   [ui-view].ng-leave {
@@ -450,6 +471,36 @@ div.inner-project a.go-back {
 
   /* ==== */
 
+  .ng-enter ul.projects li a > div {
+    opacity: 0;
+    transform: translate(100px,-52%);
+
+
+  }
+
+  ul.projects li a > div {
+    opacity: 1;
+  }
+
+  ul.projects > li.green > a  > div {
+    transition: all 0.3s ease;
+  }
+  ul.projects > li.pink > a > div {
+    transition: all 0.4s ease 0.05s;
+  }
+  ul.projects > li.light-blue > a > div {
+    transition: all 0.5s ease 0.1s;
+  }
+  ul.projects > li.carmine > a > div {
+    transition: all 0.6s ease 0.15s;
+  }
+  ul.projects > li.yellow > a > div {
+    transition: all 0.7s ease 0.2s;
+  }
+  
+
+  /* ==== */
+
   .ng-enter div.inner-project a.go-back {
     opacity: 0;
     transform: scale(3) translate(10px,0) rotate(120deg);
@@ -458,7 +509,11 @@ div.inner-project a.go-back {
   div.inner-project a.go-back {
     transform: scale(1) translate(0,0) rotate(0deg) ;
     transition:all 0.5s ease;
-    will-change: transform;
+  }
+
+  .ng-leave div.inner-project a.go-back {
+    opacity: 0;
+    transform: scale(0.5) translate(-50px,0) rotate(-45deg);
   }
 
   .ng-enter div.inner-project h1 {
@@ -471,7 +526,6 @@ div.inner-project a.go-back {
     transform: scale(1) translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.1s;
-    will-change: transform;
   }
 
   .ng-enter div.inner-project span.project-subtitle {
@@ -483,7 +537,6 @@ div.inner-project a.go-back {
     transform: translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.2s;
-    will-change: transform;
   }
 
   .ng-enter div.inner-project a.site-anchor {
@@ -495,8 +548,6 @@ div.inner-project a.go-back {
     transform: translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.3s;
-
-    will-change: transform;
   }
 
   .ng-enter div.inner-project p {
@@ -509,7 +560,6 @@ div.inner-project a.go-back {
     transform: translate(0,0);
     transition:all 0.5s ease;
     transition-delay: 0.4s;
-    will-change: transform;
   }
 
   
