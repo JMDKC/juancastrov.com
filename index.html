@@ -6,10 +6,31 @@
 	<script src="https://use.typekit.net/csq2lfi.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+	<!-- FONT AWESOME -->
+	<script src="https://use.fontawesome.com/006f940e7a.js"></script>
+
 	<!-- MAIN -->
 	<meta charset="utf-8">
 	<title>Juan José Castro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
   <!-- STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -22,6 +43,7 @@
   <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
   <script type="text/javascript" src="js/angular-animate.min.js"></script>
   <script type="text/javascript" src="js/angular-translate.min.js"></script>
+  <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="js/controller.js"></script>
 </head>
 <body ng-controller="ctrl">
@@ -58,91 +80,11 @@
 
 </header>
 <section>
-	<ul class="projects">
-	<li class="green">
-			<a href="http://porc.co">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Porc.co App</h2>
-
-					<div class="tags">
-						<span>Diseño</span>
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-			</a>
-		</li>
-	<li class="pink">
-			<a href="http://becomeacurator.com">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Become a curator</h2>
-
-					<div class="tags">
-						<span>Arte</span>
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-			</a>
-		</li>
-	
-		<li class="light-blue">
-			<a href="http://magicmarkers.tv">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Magic Markers</h2>
-
-					<div class="tags">
-						<span>Diseño</span>
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-			</a>
-		</li>
-
-		<li class="carmine">
-			<a href="http://dejemosdematarnos.com">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Dejemos de matarnos</h2>
-					
-					<div class="tags">
-						<span>Diseño</span>
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-				
-			</a>
-		</li>
-		
-		
-		<li class="blue">
-			<a href="http://infodebolsillo.com">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Info de bolsillo</h2>
-
-					<div class="tags">
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="yellow">
-			<a href="http://julianacastrov.com">
-				<div>
-					<span>Mayo 2016</span>
-					<h2>Juliana Castro V.</h2>
-
-					<div class="tags">
-						<span>Desarrollo web</span>
-					</div>
-				</div>
-			</a>
-		</li>
-		
-
-	</ul>
+	<div id="view-container">
+		<div id="view" ui-view>
+			<!-- UI-ROUTER VIEWS -->
+		</div>
+	</div>
 </section>
 
 </body>

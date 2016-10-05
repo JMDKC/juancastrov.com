@@ -13,11 +13,16 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  font-family: 'soleil', sans-serif;
+}
+
 header {
   background-color: #F5F5F0;
   overflow: auto;
   padding: 40px 25px;
   position: relative;
+  z-index: 20;
 }
 
 header img.logo {
@@ -30,12 +35,14 @@ header h1#title {
   font-size: 1.3em;
   font-weight: 700;
   margin-bottom: 15px;
+  /*font-family: 'museo-sans', sans-serif;*/
 }
 
 header span#subtitle {
   display: block;
   font-weight: 100;
   color: #4D4D4D;
+  font-family: 'soleil', sans-serif;
 }
 
 a, a:active, a:visited, a:focus, a:hover {
@@ -52,18 +59,19 @@ header a.button {
   display: inline-block;
   padding: 8px;
   margin-left: -8px;
-  margin-top: 15px;
+  margin-top: 20px;
 
   transition: letter-spacing 0.1s ease;
 }
 
 header div.head .description {
-    font-size: 0.7em;
-    margin-top: 15px;
-    line-height: 2em;
-    padding-right: 20px;
-    max-width: 290px;
-  }
+  font-size: 0.7em;
+  margin-top: 20px;
+  line-height: 2em;
+  padding-right: 20px;
+  max-width: 290px;
+  font-family: 'soleil', sans-serif;
+}
 
 
 header ul.social-links {
@@ -94,13 +102,12 @@ header ul.social-links > li > a {
   transition: letter-spacing 0.1s ease;
 }
 
-
-
 ul.projects {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 0.8em;
+  background-color: white;
 }
 
 ul.projects > li:first-child {
@@ -174,8 +181,87 @@ ul.projects > li > a h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
-  font-size: 1.33em;
+  font-size: 1.5em;
 }
+
+div.inner-project {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  padding: 0 5vw 40px 5vw;
+  font-size: 0.8em;
+  background-color: white;
+}
+
+div.inner-project h1 {
+  margin-bottom: 5px;
+  font-size: 2.5em;
+} 
+
+div.inner-project span.project-subtitle {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  opacity: 0.6;
+  letter-spacing: 2px;
+  /*margin-bottom: 40px;*/
+  display: block;
+}
+
+div.inner-project p {
+  line-height: 1.8em;
+}
+
+div.inner-project > div.header {
+  background-color: #81E6C8;
+  margin: 0 -5vw 50px;
+  padding: 25vh 5vw 50px 5vw;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0px 5px 25px #ddd;
+}
+
+div.inner-project a.site-anchor {
+  display: inline-block;
+  position: absolute;
+  right: 5vw;
+  bottom: 50px;
+  font-weight: 900;
+  opacity: 0.4;
+  font-size: 0.8em;
+}
+
+div.inner-project p {
+  width: 80%;
+}
+
+div.inner-project a.site-anchor span {
+  letter-spacing: 2px;
+  transition: letter-spacing 0.1s ease;
+}
+
+div.inner-project a.site-anchor:hover span {
+  letter-spacing: 5px;
+}
+
+div.inner-project a.site-anchor i {
+  padding-left: 5px;
+}
+
+div.inner-project a.go-back {
+  display: inline-block;
+  position: absolute;
+  left: 5vw;
+  top: calc(5vw - 10px);
+  font-weight: 900;
+  opacity: 0.25;
+  /*letter-spacing: 2px;*/
+  font-size: 1.75em;
+}
+
+
+
+/* MEDIA QUERIES
+==================== */
 
 @media screen and (min-width: 375px) {
   body {
@@ -200,13 +286,46 @@ ul.projects > li > a h2 {
   }
 
   header ul.social-links > li > a:hover {
-  letter-spacing: 6px;
-}
+    letter-spacing: 6px;
+  }
 
   section {
-    width: 60%;
-    float: right;
+    
   }
+
+  /* ANIMATIONS
+  ==================== */
+
+  /* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+#view-container {
+  position: relative;
+  height: 65px;
+  width: 60%;
+  float: right;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  width: 100%;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+  right: 0;
+}
+
+[ui-view].ng-leave-active {
+  opacity: 1;
+  right: 60vw;
+}
+
+  /*=====================*/
 
   header img.logo {
     position: absolute;
@@ -219,13 +338,14 @@ ul.projects > li > a h2 {
     top: 50vh;
     margin-top: -77px;
     padding-right: 20px;
+    z-index: 10;
     /*height: 136px;*/
 
     transition: margin-top 0.3s ease;
   }
 
   header div.head.higher {
-    margin-top: -159.5px;
+    margin-top: -164.58px;
     /*height: 136px;*/
   }
 
@@ -259,7 +379,7 @@ ul.projects > li > a h2 {
 
   ul.projects > li > a {
     padding: 0 4vw;
-    height: 16.65vh;
+    height: 19.98vh;
   }
 
   ul.projects > li > a {
@@ -277,7 +397,7 @@ ul.projects > li > a h2 {
   }
 
   ul.projects > li > a:hover h2 {
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     transition-delay: 0.3s;
   }
 

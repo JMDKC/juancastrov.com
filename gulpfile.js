@@ -18,7 +18,7 @@ gulp.task('html', function() {
 gulp.task('watch', function() {
   livereload.listen();
 
-  gulp.watch(['*.html'], ['html']);
+  gulp.watch(['*.html', 'views/*.html'], ['html']);
   gulp.watch('css/*.css', ['css']);
   gulp.watch('js/*.js', ['js']);
 });
