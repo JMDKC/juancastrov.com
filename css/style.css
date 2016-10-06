@@ -526,10 +526,10 @@ div.inner-project span.hint {
     position: absolute;
     width: 100%;
 
-    -webkit-transition:all 0.4s cubic-bezier(.85,0,.15,1);
-    -moz-transition:all 0.4s cubic-bezier(.85,0,.15,1);
-    -o-transition:all 0.4s cubic-bezier(.85,0,.15,1);
-    transition:all 0.4s cubic-bezier(.85,0,.15,1);  
+    -webkit-transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);*/
+    -moz-transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);*/
+    -o-transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);*/
+    transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);  */
   }
 
   [ui-view].ng-leave {
