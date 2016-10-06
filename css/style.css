@@ -311,7 +311,7 @@ div.inner-project span.hint {
   max-height: 300px;
   box-shadow: 0 5px 50px #aaa;
   z-index: 10;
-  margin: 40px 0;
+  margin: 50px 0;
   /*max-width: 60%;*/
   /*margin: 0 10px;*/
 }
@@ -523,24 +523,34 @@ div.inner-project span.hint {
     float: right;
   }
 
-  [ui-view].ng-enter, [ui-view].ng-leave {
+  div#view.ng-enter,
+  div#view.ng-leave {
     position: absolute;
     width: 100%;
 
-    -webkit-transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);*/
-    -moz-transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);*/
-    -o-transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);*/
-    transition:all 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);  */
+    transition: transform 0.3s ease-in-out; /*cubic-bezier(.85,0,.15,1);  */
   }
 
-  [ui-view].ng-leave {
+  div#view.ng-leave {
     opacity: 1; 
-    right: 0;
+    transform: translate(0);
+    /*z-index: 1000;*/
   }
 
-  [ui-view].ng-leave-active {
+  div#view.ng-leave-active {
     opacity: 1;
-    right: 60vw;
+    transform: translate(-60vw);
+  }
+
+  div#view.ng-enter {
+    opacity: 1; 
+    transform: translate(60vw);
+    z-index: 1000;
+  }
+
+  div#view.ng-enter-active {
+    opacity: 1;
+    transform: translate(0);
   }
 
   /* ==== */

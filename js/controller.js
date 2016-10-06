@@ -43,33 +43,34 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
   })
 
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise('/');
     // $urlRouterProvider.when('/a', '/a/overview');
     // $locationProvider.html5Mode(true);
     $stateProvider
       // login page
       .state('main', {
-        url         : "/",
-        templateUrl : "views/index.tpl.html"
+        url         : '/',
+        templateUrl : 'views/index.tpl.html'
       })
       .state('porc', {
-        url         : "/porc",
-        templateUrl : "views/porc.tpl.html",
+        url         : '/porc',
+        templateUrl : 'views/porc.tpl.html',
         controller  : 'inner'
       })
       .state('becomeacurator', {
-        url         : "/becomeacurator",
-        templateUrl : "views/becomeacurator.tpl.html",
+        url         : '/becomeacurator',
+        templateUrl : 'views/becomeacurator.tpl.html',
         controller  : 'inner'
       })
   })
 
-  .controller('ctrl', function($scope, $translate, $rootScope) {
+  .controller('ctrl', function($scope, $translate, $rootScope, $state) {
 
-    $rootScope.$on('$stateChangeStart', function (){ 
+    $rootScope.$on('$stateChangeStart', function (event, toState){ 
       $scope.readMore = false;
-      // var myElement = angular.element( document.querySelector(') );
       $('#collapseExample').collapse('hide');
+
+      $(":animated").finish();
     });
 
     var userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
