@@ -3,7 +3,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
   .config(function ($translateProvider) {
     $translateProvider.translations('en', {
       'TITLE': 'Web developer & designer.',
-      'DESCRIPTION': 'I\'m a web developer and designer living in Bogotá, CO. What I do is conceive, develop and empower ideas on the web, at the intersection between design, art and tech.',
+      'DESCRIPTION': 'I\'m a web developer and designer living in Bogotá, CO. I conceive, develop and empower ideas on the web, at the intersection between design, art and tech.',
       'READ_MORE': 'Read more',
       'READ_LESS': 'Read less',
 
@@ -26,14 +26,16 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
       'READ_MORE': 'Leer más',
       'READ_LESS': 'Leer menos',
 
-      'MAY': 'May',
-      'JUL': 'July',
-      'AGO': 'August',
-      'OCT': 'October',
-      'SEP': 'September',
+      'MAY': 'Mayo',
+      'JUL': 'Julio',
+      'AGO': 'Agosto',
+      'OCT': 'Octubre',
+      'SEP': 'Septiembre',
 
-      'DESIGN': 'Design',
+      'DESIGN': 'Diseño',
       'DEVELOPMENT': 'Desarrollo',
+      'ART': 'Arte',
+      'PORTFOLIO': 'Portafolio',
 
     });
    
@@ -52,23 +54,39 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
       })
       .state('porc', {
         url         : "/porc",
-        templateUrl : "views/porc.tpl.html"
+        templateUrl : "views/porc.tpl.html",
+        controller  : 'inner'
+      })
+      .state('becomeacurator', {
+        url         : "/becomeacurator",
+        templateUrl : "views/becomeacurator.tpl.html",
+        controller  : 'inner'
       })
   })
 
   .controller('ctrl', function($scope, $translate, $rootScope) {
 
     $rootScope.$on('$stateChangeStart', function (){ 
-        $scope.readMore = false;
-        // var myElement = angular.element( document.querySelector(') );
-        $('#collapseExample').collapse('hide');
-      });
+      $scope.readMore = false;
+      // var myElement = angular.element( document.querySelector(') );
+      $('#collapseExample').collapse('hide');
+    });
 
     var userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
 
     if (userLang === 'es') {
       $translate.use('es');
     } else if (userLang === 'en') {
-      $translate.use('es');
+      $translate.use('en');
     }
+  })
+
+  .controller('inner', function($scope, $translate, $rootScope) {
+    jQuery(document).ready(function($) {
+      $('.slider').unslider({
+        arrows: true,
+        infinite: true,
+        // animateHeight: true
+      });
+    });
   });
