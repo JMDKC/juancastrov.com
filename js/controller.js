@@ -69,8 +69,6 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.
     $rootScope.$on('$stateChangeStart', function (event, toState){ 
       $scope.readMore = false;
       $('#collapseExample').collapse('hide');
-
-      $(":animated").finish();
     });
 
     var userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
