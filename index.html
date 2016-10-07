@@ -48,8 +48,23 @@
   <script type="text/javascript" src="js/angular-translate.min.js"></script>
   <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="js/controller.js"></script>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	  <script type="text/javascript">
+		$(window).on('load', function() {
+			$(".loader").fadeOut("slow");
+			console.log('omg');
+		})
+	</script>
+
 </head>
 <body ng-controller="ctrl">
+
+<div class="loader">
+	<div class='uil-facebook-css' style='-webkit-transform:scale(0.4)'><div></div><div></div><div></div></div>
+</div>
 
 <header>
 
@@ -94,9 +109,7 @@
 	</div>
 </section>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/unslider-min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
