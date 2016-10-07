@@ -11,6 +11,24 @@ body {
 
 * {
   box-sizing: border-box;
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+a.language {
+  padding: 5px;
+  margin-bottom: -5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  font-size: 0.66em;
+
+  transition: letter-spacing 0.1s ease;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 5vw;
+  right: 5vw;
 }
 
 p {
@@ -243,6 +261,7 @@ div.inner-project a.site-anchor {
   font-weight: 900;
   opacity: 0.4;
   font-size: 0.8em;
+  text-transform: uppercase;
 }
 
 div.inner-project p {
@@ -287,10 +306,11 @@ div.inner-project span.hint {
   top: 0;
   font-weight: 600;
   letter-spacing: 10px;
-  margin-top: -25px;
+  margin-top: -20px;
   opacity: 0.15;
   font-size: 1.5em;
   margin-right: 10px;
+  text-transform: uppercase;
 }
 
 .collapsing {
