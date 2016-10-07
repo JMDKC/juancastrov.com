@@ -1,4 +1,4 @@
-angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'ui.router'])
+angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.AngularDisableAnimate', 'ui.router'])
 
   .config(function ($translateProvider) {
     $translateProvider.translations('en', {

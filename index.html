@@ -44,6 +44,7 @@
   <script type="text/javascript" src="js/angular.min.js"></script>
   <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
   <script type="text/javascript" src="js/angular-animate.min.js"></script>
+  <script type="text/javascript" src="js/angular-disable-animate.min.js"></script>
   <script type="text/javascript" src="js/angular-translate.min.js"></script>
   <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="js/controller.js"></script>
@@ -66,8 +67,8 @@
 		  </div>
 		</div>
 		<a class="button" href="" ng-click="readMore = !readMore" data-toggle="collapse" data-target="#collapseExample">
-			<span ng-show="!readMore">+ {{ 'READ_MORE' | translate }}</span>
-			<span ng-show="readMore">- {{ 'READ_LESS' | translate }}</span>
+			<span bc-disable-animate ng-show="!readMore">+ {{ 'READ_MORE' | translate }}</span>
+			<span bc-disable-animate ng-show="readMore">- {{ 'READ_LESS' | translate }}</span>
 		</a>
 	</div>
 
