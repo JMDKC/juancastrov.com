@@ -208,6 +208,7 @@ div.inner-project h1 {
   margin-bottom: 10px;
   font-size: 1.85em;
   margin-left: -2.7px;
+  color: rgba(0,0,0,0.75);
 } 
 
 div.inner-project span.project-subtitle {
