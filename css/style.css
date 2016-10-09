@@ -305,6 +305,8 @@ div.inner-project span.hint {
 
 .unslider {
   position: relative;
+  margin-right: -25px !important;
+  margin-left: -25px !important;
 }
 
 .slider .img-container {
@@ -315,6 +317,7 @@ div.inner-project span.hint {
 .slider img {
   display: inline;
   max-height: 300px;
+  max-width: 100%;
   box-shadow: 0 5px 50px #aaa;
   z-index: 10;
   margin: 50px 0;
@@ -718,6 +721,16 @@ div.inner-project .slider {
 
   div.inner-project span.hint {
     font-size: 1.5em;
+  }
+
+  .unslider {
+    margin: 0 !important;
+  }
+
+  .slider img {
+    display: inline;
+    max-height: 300px;
+    max-width: calc(100% - 100px);
   }
 
   /* ANIMATIONS
