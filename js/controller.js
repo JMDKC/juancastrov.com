@@ -133,6 +133,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
 
   .controller('ctrl', function($scope, $translate, $rootScope, $state, $window) {
 
+    $rootScope.$state = $state;
+
     $rootScope.$on('$stateChangeStart', function (event, toState){ 
       $scope.readMore = false;
       $('#collapseExample').collapse('hide');

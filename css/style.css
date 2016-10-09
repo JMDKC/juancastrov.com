@@ -26,7 +26,7 @@ a.language {
   transition: letter-spacing 0.1s ease;
   opacity: 0.2;
   position: absolute;
-  bottom: 5vw;
+  top: 30px;
   right: 5vw;
 }
 
@@ -202,17 +202,22 @@ ul.projects > li > a h2 {
 }
 
 div.inner-project {
-  height: 100vh;
+  /*height: 100vh;*/
+  position: fixed;
+  top: 0;
+
+  z-index: 20;
   width: 100%;
   overflow: auto;
-  padding: 0 5vw 40px 5vw;
+  height: 100%;
+  padding: 0 25px 40px 25px;
   font-size: 0.8em;
   background-color: white;
 }
 
 div.inner-project h1 {
-  margin-bottom: 5px;
-  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-size: 1.85em;
   margin-left: -2.7px;
 } 
 
@@ -245,8 +250,8 @@ div.inner-project#green > div.header
   { background-color: #81E6C8; }
 
 div.inner-project > div.header {
-  margin: 0 -5vw 50px;
-  padding: 25vh 5vw 50px 5vw;
+  margin: 0 -25px 30px;
+  padding: 25vh 25px 30px 25px;
   overflow: auto;
   position: relative;
   box-shadow: 0px 5px 25px #ddd;
@@ -254,26 +259,20 @@ div.inner-project > div.header {
 
 div.inner-project a.site-anchor {
   display: inline-block;
-  position: absolute;
-  right: 5vw;
-  bottom: 50px;
   font-weight: 900;
+  margin-top: 15px;
   opacity: 0.4;
   font-size: 0.8em;
   text-transform: uppercase;
 }
 
 div.inner-project p {
-  width: calc(100% - 120px);
+  width: calc(100% - 40px);
 }
 
 div.inner-project a.site-anchor span {
   letter-spacing: 2px;
   transition: letter-spacing 0.1s ease;
-}
-
-div.inner-project a.site-anchor:hover span {
-  letter-spacing: 5px;
 }
 
 div.inner-project a.site-anchor i {
@@ -283,11 +282,9 @@ div.inner-project a.site-anchor i {
 div.inner-project a.go-back {
   display: inline-block;
   position: fixed;
-  /*left: 45vw;*/
-  top: calc(5vw - 10px);
+  top: 25px;
   font-weight: 900;
   opacity: 0.25;
-  /*letter-spacing: 2px;*/
   font-size: 1.75em;
   z-index: 30;
 }
@@ -307,7 +304,7 @@ div.inner-project span.hint {
   letter-spacing: 10px;
   margin-top: -20px;
   opacity: 0.15;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-right: 10px;
   text-transform: uppercase;
 }
@@ -359,19 +356,132 @@ div.inner-project span.hint {
 
   overflow: hidden;
   color: transparent;
-  /*background: rgba(0,0,0,.2) no-repeat 50% 50%;*/
-
   background-size: 7px 11px;
-
-  /*border-radius: 32px;*/
   text-indent: 8px;
-
-  /*opacity: .6;*/
-  /*transition: opacity .2s;*/
 }
 
 .unslider-arrow:hover {
   color: transparent;
+}
+
+/* ANIMATIONS
+==================== */
+
+.ng-enter div.inner-project a.go-back {
+  opacity: 0;
+  transform: scale(3) translate(10px,0) rotate(120deg);
+}
+
+div.inner-project a.go-back {
+  transform: scale(1) translate(0,0) rotate(0deg) ;
+  transition: all 0.5s ease;
+}
+
+.ng-enter div.inner-project h1 {
+  opacity: 0;
+  transform: scale(1) translate(30px,0);
+}
+
+div.inner-project h1 {
+  display: inline-block;
+  transform: scale(1) translate(0,0);
+  transition:all 0.5s ease;
+  transition-delay: 0.1s;
+}
+
+.ng-enter div.inner-project span.project-subtitle {
+  opacity: 0;
+  transform: translate(50px,0);
+}
+
+div.inner-project span.project-subtitle {
+  transform: translate(0,0);
+  transition:all 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+.ng-enter div.inner-project a.site-anchor {
+  opacity: 0;
+  transform: translate(50px,0);
+}
+
+div.inner-project a.site-anchor {
+  transform: translate(0,0);
+  transition:all 0.5s ease;
+  transition-delay: 0.3s;
+}
+
+.ng-enter div.inner-project p {
+  opacity: 0;
+  transform: translate(0px,50px);
+}
+
+div.inner-project p {
+  opacity: 1;
+  transform: translate(0,0);
+  transition:all 0.5s ease;
+  transition-delay: 0.3s;
+}
+
+.ng-enter div.inner-project span.hint {
+  opacity: 0;
+}
+
+div.inner-project span.hint {
+  /*opacity: 1;*/
+  transition:all 0.5s ease;
+  transition-delay: 0.3s;
+}
+
+.ng-enter div.inner-project .slider {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+div.inner-project .slider {
+  opacity: 1;
+  transform: scale(1);
+  transition:all 0.5s ease;
+  transition-delay: 0.3s;
+}
+
+/* MOBILE-ONLY ANIMATIONS
+==================== */
+
+@media screen and (max-width: 767px) {
+
+  div#view.ng-enter,
+  div#view.ng-leave {
+    width: 100%;
+    transition: all 0.8s cubic-bezier(.85,0,.15,1);
+  }
+
+  div#view.inner.ng-enter,
+  div#view.inner.ng-leave {
+    width: 100%;
+    transition: all 0.8s cubic-bezier(.85,0,.15,1);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    height: 100vh;
+  }
+
+  div#view.inner.ng-leave {
+    transform: translateX(0);
+  }
+
+  div#view.inner.ng-leave-active {
+    transform: translateX(-100vw);
+  }
+
+  div#view.inner.ng-enter {
+    transform: translateX(100vw);
+  }
+
+  div#view.inner.ng-enter-active {
+    transform: translateX(0);
+  }
 }
 
 
@@ -387,6 +497,13 @@ div.inner-project span.hint {
 @media screen and (min-width: 768px) {
   body {
     font-size: 22px;
+  }
+
+  a.language {
+    top: auto;
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
   }
 
   header {
@@ -529,7 +646,55 @@ div.inner-project span.hint {
   { box-shadow: inset -60vw 0px #81E6C8;}
 
 
+  div.inner-project {
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    padding: 0 5vw 40px 5vw;
+    font-size: 0.8em;
+    background-color: white;
+    position: initial;
+  }
 
+  div.inner-project h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+  } 
+
+  div.inner-project > div.header {
+    margin: 0 -5vw 50px;
+    padding: 25vh 5vw 50px 5vw;
+  }
+
+  div.inner-project a.site-anchor {
+    position: absolute;
+    right: 5vw;
+    bottom: 50px;
+    margin-top: 0;
+  }
+
+  div.inner-project a.go-back {
+    display: inline-block;
+    position: fixed;
+    top: calc(5vw - 10px);
+    font-weight: 900;
+    opacity: 0.25;
+    font-size: 1.75em;
+    z-index: 30;
+  }
+
+  div.inner-project a.site-anchor:hover span {
+    letter-spacing: 5px;
+  }
+
+  div.inner-project p {
+    width: calc(100% - 100px);
+  }
+
+  div.inner-project span.hint {
+    font-size: 1.5em;
+  }
 
   /* ANIMATIONS
   ==================== */
@@ -605,86 +770,11 @@ div.inner-project span.hint {
     transition: all 0.7s ease 0.2s;
   }
   
-
-  /* ==== */
-
-  .ng-enter div.inner-project a.go-back {
-    opacity: 0;
-    transform: scale(3) translate(10px,0) rotate(120deg);
-  }
-
-  div.inner-project a.go-back {
-    transform: scale(1) translate(0,0) rotate(0deg) ;
-    transition: all 0.5s ease;
-  }
-
-  .ng-enter div.inner-project h1 {
-    opacity: 0;
-    transform: scale(1) translate(30px,0);
-  }
-
-  div.inner-project h1 {
-    display: inline-block;
-    transform: scale(1) translate(0,0);
-    transition:all 0.5s ease;
-    transition-delay: 0.1s;
-  }
-
-  .ng-enter div.inner-project span.project-subtitle {
-    opacity: 0;
-    transform: translate(50px,0);
-  }
-
-  div.inner-project span.project-subtitle {
-    transform: translate(0,0);
-    transition:all 0.5s ease;
-    transition-delay: 0.2s;
-  }
-
   .ng-enter div.inner-project a.site-anchor {
-    opacity: 0;
     transform: translate(-50px,0);
   }
 
-  div.inner-project a.site-anchor {
-    transform: translate(0,0);
-    transition:all 0.5s ease;
-    transition-delay: 0.3s;
-  }
-
-  .ng-enter div.inner-project p {
-    opacity: 0;
-    transform: translate(0px,50px);
-  }
-
-  div.inner-project p {
-    opacity: 1;
-    transform: translate(0,0);
-    transition:all 0.5s ease;
-    transition-delay: 0.3s;
-  }
-
-  .ng-enter div.inner-project span.hint {
-    opacity: 0;
-  }
-
-  div.inner-project span.hint {
-    /*opacity: 1;*/
-    transition:all 0.5s ease;
-    transition-delay: 0.3s;
-  }
-
-  .ng-enter div.inner-project .slider {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-
-  div.inner-project .slider {
-    opacity: 1;
-    transform: scale(1);
-    transition:all 0.5s ease;
-    transition-delay: 0.3s;
-  }
+  
 
   /*=====================*/
 }
@@ -694,6 +784,10 @@ div.inner-project span.hint {
     display: inline-block;
   }
 }
+
+
+/* LOADER
+=================== */
 
 .loader {
   position: fixed;
@@ -710,9 +804,6 @@ div.inner-project span.hint {
   /*transform: translateY(50%) !important;*/
   margin-top: calc(50vh - 100px);
 }
-
-/* LOADER
-=================== */
 
 @-webkit-keyframes uil-facebook {
   0% {
