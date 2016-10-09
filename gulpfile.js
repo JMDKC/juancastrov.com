@@ -25,9 +25,9 @@ gulp.task('rev', function() {
 gulp.task('watch', function() {
   livereload.listen();
 
-  gulp.watch(['*.html', 'views/*.html'], ['html']);
-  gulp.watch('css/*.css', ['css', 'rev']);
-  gulp.watch('js/*.js', ['js', 'rev']);
+  gulp.watch(['*.html', 'views/*.html'], ['html', 'rev']);
+  gulp.watch('css/*.css', ['css']);
+  gulp.watch('js/*.js', ['js']);
 });
 
 
