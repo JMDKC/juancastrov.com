@@ -48,7 +48,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
    
     $translateProvider.translations('es', {
       'TITLE': 'Diseñador y desarollador web.',
-      'DESCRIPTION': 'Soy diseñador y desarollador web en Bogotá, CO. Lo que hago es concebir, desarrollar y empoderar experiencias en la web, en la intersección entre el diseño, el arte y la tecnología.',
+      'DESCRIPTION': 'Soy diseñador y desarollador web en Bogotá, CO. Concibo, desarrollo y empodero experiencias en la web, en la intersección entre el diseño, el arte y la tecnología.',
       'READ_MORE': 'Leer más',
       'READ_LESS': 'Leer menos',
 
