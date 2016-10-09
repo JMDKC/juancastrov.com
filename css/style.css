@@ -199,7 +199,6 @@ div.inner-project {
   width: 100%;
   overflow: auto;
   height: 100%;
-  padding: 0 25px 40px 25px;
   font-size: 0.8em;
   background-color: white;
   -webkit-overflow-scrolling: touch;
@@ -239,11 +238,18 @@ div.inner-project#green > div.header
   { background-color: #81E6C8; } 
 
 div.inner-project > div.header {
-  margin: 0 -25px 30px;
-  padding: 25vh 25px 30px 25px;
+  margin: 0;
+  padding: 0 25px 30px 25px;
+  height: 55vh;
   /*overflow: auto;*/
   position: relative;
-  box-shadow: 0px 5px 25px #ddd;
+  /*box-shadow: 0px 5px 25px #ddd;*/
+}
+
+div.inner-project > div.header div.header-content {
+  position: absolute;
+  width: calc(100% - 50px);
+  bottom: 30px;
 }
 
 div.inner-project a.site-anchor {
@@ -257,6 +263,11 @@ div.inner-project a.site-anchor {
 
 div.inner-project p {
   width: calc(100% - 40px);
+}
+
+div.inner-project div.content {
+  padding: 0 25px 40px 25px;
+  margin-top: 30px;
 }
 
 div.inner-project a.site-anchor span {
@@ -287,7 +298,7 @@ div.inner-project span.hint {
   -webkit-transform: translateX(50%) rotate(270deg) translateX(-50%);
           transform: translateX(50%) rotate(270deg) translateX(-50%);
   position: absolute;
-  right: 0;
+  right: 25px;
   top: 0;
   font-weight: 600;
   letter-spacing: 10px;
@@ -391,11 +402,47 @@ div.inner-project h1 {
           transform: translate(50px,0);
 }
 
+div.inner-project#light-blue div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #3195F9; }
+div.inner-project#red div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #F55667; }
+div.inner-project#blue div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #955BFF; }
+div.inner-project#carmine div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #E94142; }
+div.inner-project#pink div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #F1868E; }
+div.inner-project#yellow div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #FCEF44; }
+div.inner-project#green div.content-wrapper
+  { box-shadow: inset 0px 0vh 0px #81E6C8; } 
+
+.ng-enter div.inner-project#light-blue div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #3195F9; }
+.ng-enter div.inner-project#red div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #F55667; }
+.ng-enter div.inner-project#blue div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #955BFF; }
+.ng-enter div.inner-project#carmine div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #E94142; }
+.ng-enter div.inner-project#pink div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #F1868E; }
+.ng-enter div.inner-project#yellow div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #FCEF44; }
+.ng-enter div.inner-project#green div.content-wrapper
+  { box-shadow: inset 0px 45vh 0px #81E6C8; } 
+
+div.inner-project div.content-wrapper {
+  overflow: auto;
+  -webkit-transition: all 0.35s cubic-bezier(.85,0,.15,1);;
+          transition: all 0.35s cubic-bezier(.85,0,.15,1);
+}
+
 div.inner-project span.project-subtitle {
   -webkit-transform: translate(0,0);
           transform: translate(0,0);
   -webkit-transition: all 0.5s ease;
-  transition:all 0.5s ease;
+          transition:all 0.5s ease;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
@@ -681,7 +728,7 @@ div.inner-project .slider {
     height: 100vh;
     width: 100%;
     overflow: auto;
-    padding: 0 5vw 40px 5vw;
+    /*padding: 0 5vw 40px 5vw;*/
     font-size: 0.8em;
     background-color: white;
     position: initial;
@@ -693,14 +740,21 @@ div.inner-project .slider {
   } 
 
   div.inner-project > div.header {
-    margin: 0 -5vw 50px;
-    padding: 25vh 5vw 50px 5vw;
+    margin: 0 0 0;
+    padding: 0 5vw 50px 5vw;
+    height: 50vh;
   }
+
+  div.inner-project > div.header div.header-content {
+    position: absolute;
+    width: calc(100% - 10vw);
+    bottom: 50px;
+}
 
   div.inner-project a.site-anchor {
     position: absolute;
-    right: 5vw;
-    bottom: 50px;
+    right: 0;
+    bottom: 0;
     margin-top: 0;
   }
 
@@ -724,6 +778,12 @@ div.inner-project .slider {
 
   div.inner-project span.hint {
     font-size: 1.5em;
+    right: 5vw;
+  }
+
+  div.inner-project div.content {
+    padding: 0 5vw 40px 5vw;
+    margin-top: 50px;
   }
 
   .unslider {
@@ -816,6 +876,21 @@ div.inner-project .slider {
     -webkit-transform: translate(-50px,0);
             transform: translate(-50px,0);
   }
+
+  .ng-enter div.inner-project#light-blue div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #3195F9; }
+  .ng-enter div.inner-project#red div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #F55667; }
+  .ng-enter div.inner-project#blue div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #955BFF; }
+  .ng-enter div.inner-project#carmine div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #E94142; }
+  .ng-enter div.inner-project#pink div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #F1868E; }
+  .ng-enter div.inner-project#yellow div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #FCEF44; }
+  .ng-enter div.inner-project#green div.content-wrapper
+    { box-shadow: inset 0px 50vh 0px #81E6C8; } 
 }
 
 @media screen and (min-width: 1150px) {
