@@ -485,7 +485,8 @@ div.inner-project .slider {
   div#view.inner.ng-leave {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.001s;
+            transition-delay: 0.001s;
   }
 
   div#view.inner.ng-leave-active {
