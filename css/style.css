@@ -40,7 +40,6 @@ header {
   background-color: #F5F5F0;
   overflow: auto;
   padding: 40px 25px;
-  position: relative;
   z-index: 20;
 }
 
@@ -485,13 +484,14 @@ div.inner-project .slider {
   div#view.inner.ng-leave {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    -webkit-transition-delay: 0.001s;
-            transition-delay: 0.001s;
+    -webkit-transition-delay: 0.01s;
+            transition-delay: 0.01s;
   }
 
   div#view.inner.ng-leave-active {
     -webkit-transform: translateX(-100vw);
             transform: translateX(-100vw);
+    padding-top: 1px;
   }
 
   div#view.inner.ng-enter {
@@ -532,6 +532,7 @@ div.inner-project .slider {
     float: left;
     height: 100vh;
     padding: 40px 20px 40px 5%;
+    position: relative;
   }
 
   header a.button:hover {
@@ -540,10 +541,6 @@ div.inner-project .slider {
 
   header ul.social-links > li > a:hover {
     letter-spacing: 6px;
-  }
-
-  section {
-    
   }
 
   header img.logo {
