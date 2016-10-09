@@ -389,17 +389,6 @@ ul.projects > li > a:hover {
           transition-delay: 0;
 }
 
-ul.projects > li {
-  -webkit-transition: box-shadow 0.25s ease;
-  transition: box-shadow 0.25s ease;
-}
-
-ul.projects > li:hover {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  box-shadow: 0px 5px 25px rgba(0,0,0,0.3);
-  
-}
 
 ul.projects > li.light-blue > a:hover
 { box-shadow: inset -100vw 0px #3195F9;}
@@ -748,6 +737,17 @@ div.inner-project .slider {
     opacity: 1;
     -webkit-transition-delay: 0.1s;
             transition-delay: 0.1s;
+  }
+
+  ul.projects > li {
+    -webkit-transition: box-shadow 0.25s ease;
+    transition: box-shadow 0.25s ease;
+  }
+
+  ul.projects > li:hover {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    box-shadow: 0px 5px 25px rgba(0,0,0,0.3);
   }
 
   ul.projects > li > a div.tags {
