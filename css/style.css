@@ -281,6 +281,13 @@ div.inner-project a.site-anchor i {
   padding-left: 5px;
 }
 
+a.contact {
+  margin-left: 5px;
+  display: inline-block;
+  color: inherit;
+  font-size: 0.8em;
+}
+
 div.inner-project a.go-back {
   display: inline-block;
   position: fixed;
