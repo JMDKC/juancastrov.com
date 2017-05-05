@@ -92,7 +92,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'FOOT_SUP': '(y demasiado CSS)',
       'FOOT_2': ' por mi.',
 
-    });
+    }); 
    
     $translateProvider.preferredLanguage('en');
   })
