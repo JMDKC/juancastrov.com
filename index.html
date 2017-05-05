@@ -45,7 +45,7 @@
   <!-- STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   
-  <link rel="stylesheet" type="text/css" href="css/style.css?rev=28756e69308195c49c3d05d1278dbde8">
+  <link rel="stylesheet" type="text/css" href="css/style.css?rev=dc1627f82aa709bc80c5b98c04c5209c">
 
   <link rel="stylesheet" type="text/css" href="css/unslider.css">
   <link rel="stylesheet" type="text/css" href="css/unslider-dots.css">
@@ -57,7 +57,7 @@
   <script type="text/javascript" src="js/angular-disable-animate.min.js"></script>
   <script type="text/javascript" src="js/angular-translate.min.js"></script>
   <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="js/controller.js?rev=f4538754ca9b40ed635850734a0c436e"></script>
+  <script type="text/javascript" src="js/controller.js?rev=b509ac35c637a0f8daf0c5962fb1bde8"></script>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/unslider-min.js"></script>
@@ -92,33 +92,37 @@
 		<img class="logo" src="img/logo.png">
 	</a>
 
-	<div class="head" ng-class="{ higher: readMore }">
+	<div class="head">
+		<img src="img/prof.jpg" class="avatar">
 		<h1 id="title">Juan Castro V.</h1>
-		<span id="subtitle">{{ 'TITLE' | translate }} <a class="contact" href="mailto:hey@juancastrov.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
-		
-		<div class="collapse" id="collapseExample">
-		  <div class="description">
-		    {{ 'DESCRIPTION' | translate }}
-		  </div>
-		</div>
-		<a class="button" href="" ng-click="readMore = !readMore" data-toggle="collapse" data-target="#collapseExample">
-			<span bc-disable-animate ng-show="!readMore">+ {{ 'READ_MORE' | translate }}</span>
-			<span bc-disable-animate ng-show="readMore">- {{ 'READ_LESS' | translate }}</span>
-		</a>
+		<span id="subtitle">{{ 'TITLE' | translate }}</span>
+
+		<span class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>hey@juancastrov.com</span>
+
+		<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Seattle</span>
+
+		<ul class="social-links-small">
+			<li>
+				<a href="https://instagram.com/jjcastrov/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://fb.com/jjcastrov/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://fb.com/jjcastrov/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+
+
 	</div>
 
-	<ul class="social-links">
-		<li>
-			<a href="https://instagram.com/jjcastrov/">Instagram</a>
-		</li>
-		<li>
-			<a href="https://fb.com/jjcastrov/">Facebook</a>
-		</li>
-	</ul>
+	
 
 	<a ng-click="toggleLanguage()" class="language" href="">
 		<span animate-on-change="'OTHER_LANGUAGE' | translate">{{ 'OTHER_LANGUAGE' | translate }} <i class="fa fa-globe" aria-hidden="true"></i></span>
 	</a>
+
+	<span class="footer">{{ 'FOOT_1' | translate }}<i class="fa fa-heart" aria-hidden="true"></i> <sup>{{ 'FOOT_SUP' | translate }}</sup>{{ 'FOOT_2' | translate }}</span>
 
 </header>
 <section>
