@@ -43,8 +43,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'JULIANACASTROV_P2': '',
 
       'FOOT_1': 'Designed and coded with ',
-      'FOOT_SUP': 'and too much CSS',
-      'FOOT_2': ' by me.',
+      'FOOT_SUP': '(and too much CSS)',
+      'FOOT_2': ' by me. ',
 
     });
    
@@ -89,7 +89,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'JULIANACASTROV_P1': 'Julianacastrov.com es un portafolio de diseño para la diseñadora gráfica Juliana Castro (quien es también mi hermana). Quisimos crear un hogar en línea para su trabajo, así como algunas de sus incursiones en fotografía e ilustración. Siendo mi proyecto más antiguo y más querido, y que ha sido revisado y rediseñado varias veces ya, lo guardo con cariño aquí como recordatorio de por qué me enamoré del desarrollo web en el primer lugar. ♥',
 
       'FOOT_1': 'Diseñado y hecho con ',
-      'FOOT_SUP': 'y demasiado CSS',
+      'FOOT_SUP': '(y demasiado CSS)',
       'FOOT_2': ' por mi.',
 
     });
