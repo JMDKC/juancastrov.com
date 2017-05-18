@@ -23,8 +23,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'SEE_MORE': 'See more',
 
       'PROCESSING_SUBTITLE': 'Experiments with processing.org',
-      'PROCESSING_P1': 'While teaching myself processing, ',
-      'PROCESSING_P2': 'Porc is the result of that process.',
+      'PROCESSING_P1': 'While teaching myself Processing, I worked on designing and coding a number of small, self-contained interactive games and animations, exploring techniques such as image processing, pixel sorting, generative design and cellular automata.',
+      'PROCESSING_P2': 'This is the result of that process.',
 
       'GOOGLE_SUBTITLE': 'Software engineering internship',
       'GOOGLE_P1': 'Currently working as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017.',
@@ -70,8 +70,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'SEE_MORE': 'Ver más',
 
       'PROCESSING_SUBTITLE': 'Experimentos con Processing.org',
-      'PROCESSING_P1': 'Después de probar la mayoría de las soluciones disponibles para seguimiento de gastos en internet (y la insatisfacción con algunos caprichos), finalmente cedí. Habiendo desarrollado en la web desde hace ya un rato, decidí diseñar y desarrollar una aplicación web en toda regla por mi cuenta, con un enfoque en lograr un producto útil, con tanta atención al detalle como fue posible.',
-      'PROCESSING_P2': 'Porc es el resultado de ese proceso.',
+      'PROCESSING_P1': 'Estudiando Processing por mi cuenta, trabajé en crear una serie de mini-juegos y animaciones auto contenidas, explorando procesamiento de imágenes, pixel sorting, diseño generativo y autómatas celulares, entre otras técnicas.',
+      'PROCESSING_P2': 'Este fue el resultado de ese proceso.',
 
       'GOOGLE_SUBTITLE': 'Práctica en ingeniería de software',
       'GOOGLE_P1': 'Actualmente trabajando como parte del equipo de Datos de Google Cloud BigQuery en Invierno / Primavera de 2017.',
