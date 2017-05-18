@@ -22,9 +22,9 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'VISIT': 'Visit',
       'SEE_MORE': 'See more',
 
-      'PORC_SUBTITLE': 'Expense tracking web app',
-      'PORC_P1': 'After trying most available solutions to finance tracking on the web (and being unsatisfied with a few not-so-little quirks) I finally caved. Having been developing on the web for a while already, I decided to design and develop a full fledged web app on my own, with a focus on delivering a useful, production-ready product with as much attention to detail as possible.',
-      'PORC_P2': 'Porc is the result of that process.',
+      'PROCESSING_SUBTITLE': 'Experiments with processing.org',
+      'PROCESSING_P1': 'While teaching myself processing, ',
+      'PROCESSING_P2': 'Porc is the result of that process.',
 
       'GOOGLE_SUBTITLE': 'Software engineering internship',
       'GOOGLE_P1': 'Currently working as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017.',
@@ -69,9 +69,9 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'VISIT': 'Visitar',
       'SEE_MORE': 'Ver más',
 
-      'PORC_SUBTITLE': 'App web para manejo de gastos',
-      'PORC_P1': 'Después de probar la mayoría de las soluciones disponibles para seguimiento de gastos en internet (y la insatisfacción con algunos caprichos), finalmente cedí. Habiendo desarrollado en la web desde hace ya un rato, decidí diseñar y desarrollar una aplicación web en toda regla por mi cuenta, con un enfoque en lograr un producto útil, con tanta atención al detalle como fue posible.',
-      'PORC_P2': 'Porc es el resultado de ese proceso.',
+      'PROCESSING_SUBTITLE': 'Experimentos con Processing.org',
+      'PROCESSING_P1': 'Después de probar la mayoría de las soluciones disponibles para seguimiento de gastos en internet (y la insatisfacción con algunos caprichos), finalmente cedí. Habiendo desarrollado en la web desde hace ya un rato, decidí diseñar y desarrollar una aplicación web en toda regla por mi cuenta, con un enfoque en lograr un producto útil, con tanta atención al detalle como fue posible.',
+      'PROCESSING_P2': 'Porc es el resultado de ese proceso.',
 
       'GOOGLE_SUBTITLE': 'Práctica en ingeniería de software',
       'GOOGLE_P1': 'Actualmente trabajando como parte del equipo de Datos de Google Cloud BigQuery en Invierno / Primavera de 2017.',
@@ -117,9 +117,9 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
         templateUrl : 'views/becomeacurator.tpl.html',
         controller  : 'inner'
       })
-      .state('porc', {
-        url         : '/porc',
-        templateUrl : 'views/porc.tpl.html',
+      .state('processing', {
+        url         : '/processing',
+        templateUrl : 'views/processing.tpl.html',
         controller  : 'inner'
       })
       .state('dejemosdematarnos', {
