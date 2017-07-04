@@ -57,7 +57,7 @@
   <script type="text/javascript" src="js/angular-disable-animate.min.js"></script>
   <script type="text/javascript" src="js/angular-translate.min.js"></script>
   <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="js/controller.js?rev=ba4dd99fa74f4581e05c7530da2ddcd1"></script>
+  <script type="text/javascript" src="js/controller.js?rev=ba4dd99fa75f4581e05c7530da2ddcd1"></script>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/unslider-min.js"></script>
@@ -82,9 +82,58 @@
 </head>
 <body ng-controller="ctrl">
 
-<h3 style="text-align: center;">
-Down for maintenance! Come back soon.
-</h3>
+<div class="loader">
+	<div class='uil-facebook-css' style='transform:scale(0.4)'><div></div><div></div><div></div></div>
+</div>
+
+<header>
+
+	<a href="">
+		<img class="logo" src="img/logo.png">
+	</a>
+
+	<div class="head">
+		<img src="img/prof.jpg" class="avatar">
+		<h1 id="title">Juan Castro V.</h1>
+		<span id="subtitle">{{ 'TITLE' | translate }}</span>
+
+		<span class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>hey@juancastrov.com</span>
+
+		<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Brookyln</span>
+
+		<ul class="social-links-small">
+			<li>
+				<a href="https://instagram.com/jjcastrov"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://facebook.com/jjcastrov"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/juan-josé-castro-0542b89a"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+
+
+	</div>
+
+	
+
+	<a ng-click="toggleLanguage()" class="language" href="">
+		<span animate-on-change="'OTHER_LANGUAGE' | translate">{{ 'OTHER_LANGUAGE' | translate }} <i class="fa fa-globe" aria-hidden="true"></i></span>
+	</a>
+
+	<span class="footer">{{ 'FOOT_1' | translate }}<i class="fa fa-heart" aria-hidden="true"></i> <sup>{{ 'FOOT_SUP' | translate }}</sup>{{ 'FOOT_2' | translate }}</span>
+
+</header>
+<section>
+	<div id="view-container">
+		<div id="view" ui-view ng-class="$state.current.controller">
+			<!-- UI-ROUTER VIEWS -->
+		</div>
+	</div>
+</section>
+
+
 
 </body>
 </html>

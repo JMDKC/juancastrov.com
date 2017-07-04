@@ -27,7 +27,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'PROCESSING_P2': 'This is the result of that process.',
 
       'GOOGLE_SUBTITLE': 'Software engineering internship',
-      'GOOGLE_P1': 'Currently working as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017.',
+      'GOOGLE_P1': 'Worked as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017 in Seattle, WA.',
       'GOOGLE_P2': 'Since I can\'t disclose any details of what I\'ve worked on, here are some pictures!',
 
       'BECOMEACURATOR_SUBTITLE': 'Curatorial statement generator',
@@ -74,7 +74,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'PROCESSING_P2': 'Este fue el resultado de ese proceso.',
 
       'GOOGLE_SUBTITLE': 'Práctica en ingeniería de software',
-      'GOOGLE_P1': 'Actualmente trabajando como parte del equipo de Datos de Google Cloud BigQuery en Invierno / Primavera de 2017.',
+      'GOOGLE_P1': 'Trabajé como parte del equipo de Datos de Google Cloud BigQuery en Invierno / Primavera de 2017, en Seattle, WA.',
       'GOOGLE_P2': 'Ya que no puedo revelar detalles de lo que he trabajado, aquí hay algunas fotos:',
 
       'BECOMEACURATOR_SUBTITLE': 'Generador de textos curatoriales',
