@@ -24,7 +24,6 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
 
       'PROCESSING_SUBTITLE': 'Experiments with processing.org',
       'PROCESSING_P1': 'While teaching myself Processing, I worked on designing and coding a number of small, self-contained interactive games and animations, exploring techniques such as image processing, pixel sorting, generative design and cellular automata.',
-      'PROCESSING_P2': 'This is the result of that process.',
 
       'GOOGLE_SUBTITLE': 'Software engineering internship',
       'GOOGLE_P1': 'Worked as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017 in Seattle, WA.',
@@ -71,7 +70,6 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
 
       'PROCESSING_SUBTITLE': 'Experimentos con Processing.org',
       'PROCESSING_P1': 'Estudiando Processing por mi cuenta, trabajé en crear una serie de mini-juegos y animaciones auto contenidas, explorando procesamiento de imágenes, pixel sorting, diseño generativo y autómatas celulares, entre otras técnicas.',
-      'PROCESSING_P2': 'Este fue el resultado de ese proceso.',
 
       'GOOGLE_SUBTITLE': 'Práctica en ingeniería de software',
       'GOOGLE_P1': 'Trabajé como parte del equipo de Datos de Google Cloud BigQuery en Invierno / Primavera de 2017, en Seattle, WA.',
@@ -147,11 +145,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
 
     console.log(userLang);
 
-    if (userLang === 'es') {
-      $translate.use('es');
-    } else {
-      $translate.use('en');
-    }
+    $translate.use('en');
 
     $scope.toggleLanguage = function() {
       if ($translate.proposedLanguage() === 'en') {
