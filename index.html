@@ -11,7 +11,7 @@
 
 	<!-- MAIN -->
 	<meta charset="utf-8">
-	<title>juan castro v.</title>
+	<title>Juan Castro V.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="og:url"                content="http://juancastrov.com" />
@@ -45,7 +45,7 @@
   <!-- STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   
-  <link rel="stylesheet" type="text/css" href="css/style.css?rev=dsdas">
+  <link rel="stylesheet" type="text/css" href="css/style.css?rev=11089f3792e27a44d465fdc51f21a50f">
 
   <link rel="stylesheet" type="text/css" href="css/unslider.css">
   <link rel="stylesheet" type="text/css" href="css/unslider-dots.css">
@@ -87,13 +87,19 @@
 </div>
 
 <header>
+
+	<a href="">
+		<img class="logo" src="img/logo.png">
+	</a>
+
 	<div class="head">
-		<img src="img/juan.svg" class="avatar">
-		<img src="img/developer.svg" class="subtitle">
+		<img src="img/avatar-cropped-2.jpg" class="avatar">
+		<h1 id="title">Juan Castro V.</h1>
+		<span id="subtitle">{{ 'TITLE' | translate }}</span>
 
 		<span class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>hey@juancastrov.com</span>
 
-		<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>brooklyn</span>
+		<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Brookyln</span>
 
 		<ul class="social-links-small">
 			<li>
@@ -109,6 +115,14 @@
 
 
 	</div>
+
+	
+
+	<a ng-click="toggleLanguage()" class="language" href="">
+		<span animate-on-change="'OTHER_LANGUAGE' | translate">{{ 'OTHER_LANGUAGE' | translate }} <i class="fa fa-globe" aria-hidden="true"></i></span>
+	</a>
+
+	<span class="footer">{{ 'FOOT_1' | translate }}<i class="fa fa-heart" aria-hidden="true"></i> <sup>{{ 'FOOT_SUP' | translate }}</sup>{{ 'FOOT_2' | translate }}</span>
 
 </header>
 <section>

@@ -1,27 +1,14 @@
-/* TEMP
-=================== */
-
-img.subtitle {
-  max-width: 320px;
-  display: block;
-  margin: 0 auto -10px;
-  padding-left: 2px;
-}
 
 /* GENERAL
 =================== */
 
 body {
-  font-family: 'supria-sans', sans-serif;
-
+  font-family: 'museo-sans', sans-serif;
   padding: 0;
   margin: 0;
   font-size: 18px;
   overflow-x:hidden;
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
 }
-
 
 * {
   box-sizing: border-box;
@@ -31,8 +18,8 @@ a.language {
   padding: 5px;
   margin-bottom: -5px;
   display: inline-block;
-  text-transform: lowercase;
-  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 1.8px;
   font-size: 0.66em;
 
@@ -46,13 +33,13 @@ a.language {
 }
 
 p {
-  font-family: 'supria-sans', sans-serif;
+  font-family: 'soleil', sans-serif;
 }
 
 header {
   background-color: #F5F5F0;
   overflow: auto;
-  padding: 70px 25px;
+  padding: 40px 25px;
   z-index: 20;
 }
 
@@ -64,15 +51,15 @@ header img.logo {
 
 header h1#title {
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
 header span#subtitle {
   display: block;
-  font-weight: 400;
+  font-weight: 100;
   color: #4D4D4D;
-  font-family: 'supria-sans', sans-serif;
+  font-family: 'soleil', sans-serif;
 }
 
 a, a:active, a:visited, a:focus, a:hover {
@@ -81,8 +68,8 @@ a, a:active, a:visited, a:focus, a:hover {
 }
 
 header a.button {
-  text-transform: lowercase;
-  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 1.8px;
   font-size: 0.6em;
   color: #C9C9C5;
@@ -127,7 +114,7 @@ header div.head .description {
   font-size: 0.7em;
   margin-top: 20px;
   line-height: 2em;
-  font-family: 'supria-sans', sans-serif;
+  font-family: 'soleil', sans-serif;
 }
 
 
@@ -149,8 +136,8 @@ header ul.social-links > li {
 header ul.social-links > li > a {
   padding: 5px;
   display: inline-block;
-  text-transform: lowercase;
-  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 1.8px;
   font-size: 0.66em;
 
@@ -201,10 +188,10 @@ ul.projects > li > a {
 }
 
 ul.projects > li > a span {
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 1.8px;
   font-size: 0.7em;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 0.25;
   display: inline-block;
   margin-bottom: 5px;
@@ -227,9 +214,9 @@ ul.projects > li > a div.tags > span {
 }
 
 ul.projects > li > a h2 {
-  font-weight: 400;
-  text-transform: lowercase;
-  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin: 0;
   font-size: 1.5em;
 }
@@ -249,13 +236,12 @@ div.inner-project {
 div.inner-project h1 {
   margin-bottom: 10px;
   font-size: 1.85em;
-  font-weight: 400;
   margin-left: -2.7px;
   color: rgba(0,0,0,0.75);
 } 
 
 div.inner-project span.project-subtitle {
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-size: 0.8em;
   opacity: 0.6;
   letter-spacing: 2px;
@@ -297,11 +283,11 @@ div.inner-project > div.header div.header-content {
 
 div.inner-project a.site-anchor {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 900;
   margin-top: 15px;
   opacity: 0.4;
   font-size: 0.8em;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 div.inner-project p {
@@ -330,7 +316,7 @@ span.location {
   color: #333;
   opacity: 0.6;
   font-size: 0.75em;
-  margin-top: 0;
+  margin-top: 8px;
 
   letter-spacing: 1px;
   font-weight: 300;
@@ -348,7 +334,7 @@ div.inner-project a.go-back {
   display: inline-block;
   position: fixed;
   top: 25px;
-  font-weight: 400;
+  font-weight: 900;
   opacity: 0.25;
   font-size: 1.75em;
   z-index: 30;
@@ -365,12 +351,12 @@ div.inner-project span.hint {
   right: 25px;
   top: 0;
   margin-top: -15px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 10px;
   opacity: 0.15;
   font-size: 1.2em;
   margin-right: 10px;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .collapsing {
@@ -718,8 +704,8 @@ div.inner-project .slider {
   header ul.social-links > li > a {
     padding: 5px;
     display: inline-block;
-    text-transform: lowercase;
-    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 1.8px;
     font-size: 0.66em;
   }*/
@@ -855,7 +841,7 @@ div.inner-project .slider {
     display: inline-block;
     position: fixed;
     top: calc(5vw - 10px);
-    font-weight: 400;
+    font-weight: 900;
     opacity: 0.25;
     font-size: 1.75em;
     z-index: 30;
