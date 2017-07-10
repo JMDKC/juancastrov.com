@@ -13,6 +13,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'SEP': 'September',
       'SPRING': 'Spring',
 
+      'BIO': 'I\'m a Colombian software developer and designer, currently working on <a href="">periplo</a>. I also co-host <a href="">punto com</a>, a spanish-language podcast about internet culture.',
+
       'DESIGN': 'Design',
       'APP_DESIGN': 'App Design',
       'DEVELOPMENT': 'Development',
@@ -59,6 +61,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'OCT': 'Octubre',
       'SEP': 'Septiembre',
       'SPRING': 'Primavera',
+
+      'BIO': 'Soy desarrollador y diseñador, trabajando actualmente en <a href="">periplo</a>. También participo en <a href="">punto com</a>, un podcast sobre cultura de internet.',
 
       'DESIGN': 'Diseño',
       'APP_DESIGN': 'Diseño de app',

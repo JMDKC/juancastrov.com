@@ -302,11 +302,12 @@ div.inner-project > div.header div.header-content {
 
 div.inner-project a.site-anchor {
   display: inline-block;
-  font-weight: 900;
+  font-weight: 500;
   margin-top: 15px;
   opacity: 0.4;
   font-size: 0.8em;
   text-transform: uppercase;
+  font-family: 'roboto-mono', sans-serif;
 }
 
 div.inner-project p {
@@ -330,7 +331,8 @@ div.inner-project a.site-anchor i {
 
 span.contact,
 span.location {
-  margin-left: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
   display: inline-block;
   color: #333;
   opacity: 0.6;
