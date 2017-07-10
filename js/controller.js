@@ -2,7 +2,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
 
   .config(function ($translateProvider) {
     $translateProvider.translations('en', {
-      'TITLE': 'developer & designer.',
+      'TITLE': 'professional amateur',
 
       'OTHER_LANGUAGE': 'Español',
 

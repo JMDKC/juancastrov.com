@@ -45,7 +45,7 @@
   <!-- STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   
-  <link rel="stylesheet" type="text/css" href="css/style.css?rev=11089f3792e27a44d465fdc51f21a50f">
+  <link rel="stylesheet" type="text/css" href="css/style.css?rev=81b0eea22d3215156ec2ae668cae33ab">
 
   <link rel="stylesheet" type="text/css" href="css/unslider.css">
   <link rel="stylesheet" type="text/css" href="css/unslider-dots.css">
@@ -57,7 +57,7 @@
   <script type="text/javascript" src="js/angular-disable-animate.min.js"></script>
   <script type="text/javascript" src="js/angular-translate.min.js"></script>
   <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="js/controller.js?rev=9876543"></script>
+  <script type="text/javascript" src="js/controller.js?rev=ec2c290b6f56af9766e93a68d781e8f4"></script>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/unslider-min.js"></script>
@@ -87,19 +87,11 @@
 </div>
 
 <header>
-
-	<a href="">
-		<img class="logo" src="img/logo.png">
-	</a>
-
 	<div class="head">
 		<img src="img/eyeroll.jpg" class="avatar">
 		<h1 id="title">juan castro-varón</h1>
-		<span id="subtitle">{{ 'TITLE' | translate }}</span>
 
-		<span class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>hey@juancastrov.com</span>
-
-		<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>brooklyn</span>
+		<p class="bio">I'm a Colombian software developer and designer, currently working on <a href="">periplo</a>. I also co-host <a href="">punto com</a>, a spanish-language podcast about internet culture.</p>
 
 		<ul class="social-links-small">
 			<li>
@@ -109,7 +101,7 @@
 				<a href="https://twitter.com/jcastrovaron"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 			</li>
 			<li>
-				<a href="https://facebook.com/jjcastrov"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				<a href="https://facebook.com/jcastrovaron"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 			</li>
 		</ul>
 
@@ -119,10 +111,14 @@
 	
 
 	<a ng-click="toggleLanguage()" class="language" href="">
-		<span animate-on-change="'OTHER_LANGUAGE' | translate">{{ 'OTHER_LANGUAGE' | translate }} <i class="fa fa-globe" aria-hidden="true"></i></span>
+		<i class="fa fa-globe" aria-hidden="true"></i><span animate-on-change="'OTHER_LANGUAGE' | translate">{{ 'OTHER_LANGUAGE' | translate }} </span>
 	</a>
 
-	<span class="footer">{{ 'FOOT_1' | translate }}<i class="fa fa-heart" aria-hidden="true"></i> <sup>{{ 'FOOT_SUP' | translate }}</sup>{{ 'FOOT_2' | translate }}</span>
+	<div class="footer">
+		<span class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>juan@castrovaron.com</span>
+
+		<span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>brooklyn</span>
+	</div>
 
 </header>
 <section>
