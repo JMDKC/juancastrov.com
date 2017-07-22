@@ -13,7 +13,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'SEP': 'September',
       'SPRING': 'Spring',
 
-      'BIO': 'I\'m a Colombian software developer and designer, currently working on <a href="">periplo</a>. I also co-host <a href="">punto com</a>, a spanish-language podcast about internet culture.',
+      'BIO': 'Software developer & designer.',
 
       'DESIGN': 'Design',
       'APP_DESIGN': 'App Design',
@@ -26,14 +26,13 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
 
       'PROCESSING_SUBTITLE': 'Experiments with processing.org',
       'PROCESSING_P1': 'While teaching myself Processing, I worked on designing and coding a number of small, self-contained interactive games and animations, exploring techniques such as image processing, pixel sorting, generative design and cellular automata.',
-      'PROCESSING_P2': 'This is the result of that process.',
 
       'GOOGLE_SUBTITLE': 'Software engineering internship',
       'GOOGLE_P1': 'Worked as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017 in Seattle, WA.',
       'GOOGLE_P2': 'Since I can\'t disclose any details of what I\'ve worked on, here are some pictures!',
 
       'BECOMEACURATOR_SUBTITLE': 'Curatorial statement generator',
-      'BECOMEACURATOR_P1': 'Intended as a tongue-in-cheek reflexion on the vagueness of art discourse, Become a curator generates random artsy statements, composed of clear but meaningless sentences. This process uses Markov Chains to generate statistical models based on word frequency. These models are run through random iterations to generate the body of text.',
+      'BECOMEACURATOR_P1': 'Become a curator generates random artsy statements, composed of clear but meaningless sentences. Intended as a tongue-in-cheek reflexion on the vagueness of art discourse, this process uses Markov Chains to generate statistical models based on word frequency. These models are run through random iterations to generate the body of text.',
       'BECOMEACURATOR_P2': 'This project was conceived, designed and developed along with my greatest accomplice (and awesome sister) Juliana Castro.',
 
       'DEJEMOSDEMATARNOS_SUBTITLE': 'Website development and design',
@@ -62,7 +61,7 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'SEP': 'Septiembre',
       'SPRING': 'Primavera',
 
-      'BIO': 'Soy desarrollador y diseñador, trabajando actualmente en <a href="">periplo</a>. También participo en <a href="">punto com</a>, un podcast sobre cultura de internet.',
+      'BIO': 'Diseñador y desarrollador de software.',
 
       'DESIGN': 'Diseño',
       'APP_DESIGN': 'Diseño de app',
