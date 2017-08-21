@@ -24,8 +24,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'VISIT': 'Visit',
       'SEE_MORE': 'See more',
 
-      'PROCESSING_SUBTITLE': 'Experiments with processing.org',
-      'PROCESSING_P1': 'While teaching myself Processing, I worked on designing and coding a number of small, self-contained interactive games and animations, exploring techniques such as image processing, pixel sorting, generative design and cellular automata.',
+      'PERIPLO_SUBTITLE': 'A crazy simple journal app',
+      'PERIPLO_P1': 'After a long while trying to bring my Swift efforts to fruition, I finally released my first iOS app. Periplo is a crazy simple journaling app, with a simple, easy to use interface and markdown support. No fuss, no complications, just write your thoughts.',
 
       'GOOGLE_SUBTITLE': 'Software engineering internship',
       'GOOGLE_P1': 'Worked as part of Google Cloud\'s BigQuery Data team for Winter/Spring 2017 in Seattle, WA.',
@@ -72,9 +72,8 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
       'VISIT': 'Visitar',
       'SEE_MORE': 'Ver más',
 
-      'PROCESSING_SUBTITLE': 'Experimentos con Processing.org',
-      'PROCESSING_P1': 'Estudiando Processing por mi cuenta, trabajé en crear una serie de mini-juegos y animaciones auto contenidas, explorando procesamiento de imágenes, pixel sorting, diseño generativo y autómatas celulares, entre otras técnicas.',
-      'PROCESSING_P2': 'Este fue el resultado de ese proceso.',
+      'PERIPLO_SUBTITLE': 'Experimentos con PERIPLO.org',
+      'PERIPLO_P1': 'Estudiando PERIPLO por mi cuenta, trabajé en crear una serie de mini-juegos y animaciones auto contenidas, explorando procesamiento de imágenes, pixel sorting, diseño generativo y autómatas celulares, entre otras técnicas.',
 
       'GOOGLE_SUBTITLE': 'Práctica en ingeniería de software',
       'GOOGLE_P1': 'Trabajé como parte del equipo de Datos de Google Cloud BigQuery en Invierno / Primavera de 2017, en Seattle, WA.',
@@ -120,9 +119,9 @@ angular.module('app', ['pascalprecht.translate', 'ngSanitize', 'ngAnimate', 'bc.
         templateUrl : 'views/becomeacurator.tpl.html',
         controller  : 'inner'
       })
-      .state('processing', {
-        url         : '/processing',
-        templateUrl : 'views/processing.tpl.html',
+      .state('periplo', {
+        url         : '/periplo',
+        templateUrl : 'views/periplo.tpl.html',
         controller  : 'inner'
       })
       .state('dejemosdematarnos', {

@@ -190,7 +190,7 @@ ul.projects > li.pink > a
 ul.projects > li.yellow > a
   { box-shadow: inset -15px 0px #FCEF44; }
 ul.projects > li.green > a
-  { box-shadow: inset -15px 0px #81E6C8; }
+  { box-shadow: inset -15px 0px #C46BF7; }
 
 
 ul.projects > li > a {
@@ -284,7 +284,7 @@ div.inner-project#pink > div.header
 div.inner-project#yellow > div.header
   { background-color: #FCEF44; }
 div.inner-project#green > div.header
-  { background-color: #81E6C8; } 
+  { background-color: #C46BF7; } 
 
 div.inner-project > div.header {
   margin: 0;
@@ -486,7 +486,7 @@ div.inner-project#pink div.content-wrapper
 div.inner-project#yellow div.content-wrapper
   { box-shadow: inset 0px 0vh 0px #FCEF44; }
 div.inner-project#green div.content-wrapper
-  { box-shadow: inset 0px 0vh 0px #81E6C8; } 
+  { box-shadow: inset 0px 0vh 0px #C46BF7; } 
 
 .ng-enter div.inner-project#google-blue div.content-wrapper
   { box-shadow: inset 0px 50vh 0px #4285F4; }
@@ -501,7 +501,7 @@ div.inner-project#green div.content-wrapper
 .ng-enter div.inner-project#yellow div.content-wrapper
   { box-shadow: inset 0px 50vh 0px #FCEF44; }
 .ng-enter div.inner-project#green div.content-wrapper
-  { box-shadow: inset 0px 50vh 0px #81E6C8; } 
+  { box-shadow: inset 0px 50vh 0px #C46BF7; } 
 
 
 .ng-enter div.inner-project div.header {
@@ -772,7 +772,7 @@ div.inner-project .slider {
   ul.projects > li.yellow > a:hover
   { box-shadow: inset -60vw 0px #FCEF44;}
   ul.projects > li.green > a:hover
-  { box-shadow: inset -60vw 0px #81E6C8;}
+  { box-shadow: inset -60vw 0px #C46BF7;}
 
 
   div.inner-project {
